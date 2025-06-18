@@ -1,5 +1,5 @@
 ---
-title: "Social"
+title: ""
 layout: single
 permalink: /social/
 header:
