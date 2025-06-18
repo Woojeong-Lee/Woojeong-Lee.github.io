@@ -1,8 +1,10 @@
 ---
-title: "About"
+title: "Memory"
 layout: single
-permalink: /about/
-author_profile: true
+permalink: /memory/
+header:
+  overlay: false
+  show_title: false
 ---
 
 {% include nav.html %}
