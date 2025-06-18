@@ -7,6 +7,8 @@ header:
 ---
 {% include nav.html %}
 
+<h1 style="text-align: center;">Memory</h1>
+
 - Self-Prioritization Effects on Nonspatial Working Memory 
 Research Aim: To examine the self-prioritization effects on shape-based working memory
 [Exp1 Result](../_data/analyzeSPE8VCS1.html)
