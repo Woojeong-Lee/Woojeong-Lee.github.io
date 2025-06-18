@@ -2,8 +2,9 @@
 title: "Memory"
 layout: single
 permalink: /memory/
+header:
+  show_title: false
 ---
-
 {% include nav.html %}
 
 - Self-Prioritization Effects on Nonspatial Working Memory 
