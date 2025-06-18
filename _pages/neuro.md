@@ -2,7 +2,9 @@
 title: "Neuro"
 layout: single
 permalink: /neuro/
-author_profile: true
+header:
+  overlay: false
+  show_title: false
 ---
 
 {% include nav.html %}
