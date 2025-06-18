@@ -5,6 +5,10 @@ permalink: /neuro/
 author_profile: true
 ---
 
+{% include nav.html %}
+
+<h1>{{ page.title }}</h1>
+
 Predicting perspective-taking ability from resting-state fMRI connectivity data
 Research Aim: To investigate whether whole-brain resting-state fMRI connectivity can predict performance on a perspective-taking task
 
