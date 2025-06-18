@@ -2,7 +2,9 @@
 title: "Social"
 layout: single
 permalink: /social/
-author_profile: true
+header:
+  overlay: false
+  show_title: false
 ---
 
 {% include nav.html %}
