@@ -3,10 +3,8 @@ title: "Neuro"
 layout: single
 permalink: /neuro/
 header:
-  overlay: false
   show_title: false
 ---
-
 {% include nav.html %}
 
 Predicting perspective-taking ability from resting-state fMRI connectivity data
