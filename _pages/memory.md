@@ -4,6 +4,7 @@ layout: single
 permalink: /memory/
 header:
   show_title: false
+  author_profile: false
 ---
 {% include nav.html %}
 
