@@ -3,7 +3,6 @@ title: "Social"
 layout: single
 permalink: /social/
 header:
-  overlay: false
   show_title: false
 ---
 
