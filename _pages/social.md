@@ -5,9 +5,6 @@ permalink: /social/
 header:
   show_title: false
 ---
-
-{% include nav.html %}
-
 <h1 style="text-align: center;">Social</h1>
 
 - Group Bias on Perspective Taking in Non-Social Context
