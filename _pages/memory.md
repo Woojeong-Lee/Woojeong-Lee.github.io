@@ -2,8 +2,11 @@
 title: "Memory"
 layout: single
 permalink: /memory/
-author_profile: true
 ---
+
+{% include nav.html %}
+
+<h1>{{ page.title }}</h1>
 
 - Self-Prioritization Effects on Nonspatial Working Memory 
 Research Aim: To examine the self-prioritization effects on shape-based working memory
