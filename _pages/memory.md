@@ -4,7 +4,6 @@ layout: single
 permalink: /memory/
 header:
   show_title: false
-  author_profile: false
 ---
 <h1 style="text-align: center;">Memory</h1>
 
