@@ -5,8 +5,6 @@ permalink: /neuro/
 header:
   show_title: false
 ---
-{% include nav.html %}
-
 <h1 style="text-align: center;">Neuro</h1>
 
 - Predicting perspective-taking ability from resting-state fMRI connectivity data
