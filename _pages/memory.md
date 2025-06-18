@@ -6,8 +6,6 @@ header:
   show_title: false
   author_profile: false
 ---
-{% include nav.html %}
-
 <h1 style="text-align: center;">Memory</h1>
 
 - Self-Prioritization Effects on Nonspatial Working Memory 
