@@ -7,57 +7,52 @@ read_time: false
 ---
 
 <style>
-/* 상단 소개 문장 */
 .research-intro {
   text-align: center;
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 2rem auto 1rem;
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
 }
 
-/* 전체 3단 구성 */
+/* 3단 레이아웃 */
 .research-columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
-  margin-left: auto;
-  margin-right: auto; /* ✅ 가운데 정렬 핵심 */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-/* 각 컬럼 */
 .research-column {
-  flex: 1;
-  min-width: 280px;
+  flex: 1 1 300px;
   background: #f9f9f9;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  min-width: 280px;
 }
 
-/* 섹션 타이틀 */
 .research-column h2 {
   text-align: center;
   margin-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
-/* 개별 프로젝트 */
 .project-entry {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .project-entry h3 {
   font-size: 1rem;
   line-height: 1.4;
   margin-bottom: 0.3rem;
-  word-break: keep-all;
+  word-break: keep-word;
 }
 
 .project-entry a {
@@ -80,36 +75,50 @@ read_time: false
   <!-- Memory -->
   <div class="research-column">
     <h2>Memory</h2>
+
     <div class="project-entry">
       <h3><a href="self-prioritization.html">Self-prioritization effects on Nonspatial Working Memory</a></h3>
+      <p><!-- 연구 요약 예정 --></p>
     </div>
+
     <div class="project-entry">
       <h3><a href="meaningfulness-working-memory.html">Meaningfulness in Working Memory</a></h3>
+      <p><!-- 연구 요약 예정 --></p>
     </div>
   </div>
 
   <!-- Social -->
   <div class="research-column">
     <h2>Social</h2>
+
     <div class="project-entry">
       <h3><a href="group-bias.html">Group Bias on Perspective Taking in Non-Social Context</a></h3>
+      <p><!-- 연구 요약 예정 --></p>
     </div>
+
     <div class="project-entry">
       <h3><a href="ensemble-emotion-context.html">Context Processing in Ensemble Emotion Perception</a></h3>
+      <p><!-- 연구 요약 예정 --></p>
     </div>
+
     <div class="project-entry">
       <h3><a href="social-interaction-dimensions.html">Dimension underlying the perception of social interaction</a></h3>
+      <p><!-- 연구 요약 예정 --></p>
     </div>
   </div>
 
   <!-- Neuro -->
   <div class="research-column">
     <h2>Neuro</h2>
+
     <div class="project-entry">
       <h3><a href="perspective-fmri.html">Predicting perspective-taking ability from resting-state fMRI connectivity data</a></h3>
+      <p><!-- 연구 요약 예정 --></p>
     </div>
+
     <div class="project-entry">
       <h3><a href="voice-gender-preference.html">The Effect of Voice Gender on Product Preference</a></h3>
+      <p><!-- 연구 요약 예정 --></p>
     </div>
   </div>
 
