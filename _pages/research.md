@@ -9,8 +9,11 @@ read_time: false
 ---
 
 <div style="display: flex; justify-content: space-between; gap: 20px;">
-  <!-- First Column -->
+
+  <!-- Memory Column -->
   <div style="flex: 1;">
+    <h2><strong>Memory</strong></h2>
+
     <h3><a href="self-prioritization.html"><strong>Self-prioritization effects on Nonspatial Working Memory</strong></a></h3>
     <p><!-- 연구 요약 작성 영역 --></p>
 
@@ -18,8 +21,10 @@ read_time: false
     <p><!-- 연구 요약 작성 영역 --></p>
   </div>
 
-  <!-- Second Column -->
+  <!-- Social Column -->
   <div style="flex: 1;">
+    <h2><strong>Social</strong></h2>
+
     <h3><a href="group-bias.html"><strong>Group Bias on Perspective Taking in Non-Social Context</strong></a></h3>
     <p><!-- 연구 요약 작성 영역 --></p>
 
@@ -30,13 +35,15 @@ read_time: false
     <p><!-- 연구 요약 작성 영역 --></p>
   </div>
 
-  <!-- Third Column -->
+  <!-- Neuro Column -->
   <div style="flex: 1;">
+    <h2><strong>Neuro</strong></h2>
+
     <h3><a href="perspective-fmri.html"><strong>Predicting perspective-taking ability from resting-state fMRI connectivity data</strong></a></h3>
     <p><!-- 연구 요약 작성 영역 --></p>
 
     <h3><a href="voice-gender-preference.html"><strong>The Effect of Voice Gender on Product Preference</strong></a></h3>
     <p><!-- 연구 요약 작성 영역 --></p>
   </div>
-</div>
 
+</div>
