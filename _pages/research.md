@@ -1,6 +1,6 @@
 ---
 title: ""
-layout: single
+layout: splash
 permalink: /research/
 header:
   show_title: false
