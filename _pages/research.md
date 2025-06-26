@@ -6,6 +6,50 @@ author_profile: false
 read_time: false
 ---
 
+<p class="research-intro">
+  While I have organized my projects into the domains of <strong>Social</strong>, <strong>Memory</strong>, and <strong>Neuro</strong> for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
+</p>
+
+<div class="research-columns">
+
+  <!-- Memory -->
+  <div class="research-column">
+    <h2>Memory</h2>
+    <div class="project-entry">
+      <h3><a href="self-prioritization.html">Self-prioritization effects on Nonspatial Working Memory</a></h3>
+    </div>
+    <div class="project-entry">
+      <h3><a href="meaningfulness-working-memory.html">Meaningfulness in Working Memory</a></h3>
+    </div>
+  </div>
+
+  <!-- Social -->
+  <div class="research-column">
+    <h2>Social</h2>
+    <div class="project-entry">
+      <h3><a href="group-bias.html">Group Bias on Perspective Taking in Non-Social Context</a></h3>
+    </div>
+    <div class="project-entry">
+      <h3><a href="ensemble-emotion-context.html">Context Processing in Ensemble Emotion Perception</a></h3>
+    </div>
+    <div class="project-entry">
+      <h3><a href="social-interaction-dimensions.html">Dimension underlying the perception of social interaction</a></h3>
+    </div>
+  </div>
+
+  <!-- Neuro -->
+  <div class="research-column">
+    <h2>Neuro</h2>
+    <div class="project-entry">
+      <h3><a href="perspective-fmri.html">Predicting perspective-taking ability from resting-state fMRI connectivity data</a></h3>
+    </div>
+    <div class="project-entry">
+      <h3><a href="voice-gender-preference.html">The Effect of Voice Gender on Product Preference</a></h3>
+    </div>
+  </div>
+
+</div>
+
 <style>
 .research-intro {
   text-align: center;
@@ -63,50 +107,3 @@ read_time: false
   text-decoration: underline;
 }
 </style>
-
-<p class="research-intro">
-  While I have organized my projects into the domains of <strong>Social</strong>, <strong>Memory</strong>, and <strong>Neuro</strong> for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
-</p>
-
-<div class="research-columns">
-
-  <!-- Memory -->
-  <div class="research-column">
-    <h2>Memory</h2>
-
-    <div class="project-entry">
-      <h3><a href="self-prioritization.html">Self-prioritization effects on Nonspatial Working Memory</a></h3>
-    </div>
-    <div class="project-entry">
-      <h3><a href="meaningfulness-working-memory.html">Meaningfulness in Working Memory</a></h3>
-    </div>
-  </div>
-
-  <!-- Social -->
-  <div class="research-column">
-    <h2>Social</h2>
-
-    <div class="project-entry">
-      <h3><a href="group-bias.html">Group Bias on Perspective Taking in Non-Social Context</a></h3>
-    </div>
-    <div class="project-entry">
-      <h3><a href="ensemble-emotion-context.html">Context Processing in Ensemble Emotion Perception</a></h3>
-    </div>
-    <div class="project-entry">
-      <h3><a href="social-interaction-dimensions.html">Dimension underlying the perception of social interaction</a></h3>
-    </div>
-  </div>
-
-  <!-- Neuro -->
-  <div class="research-column">
-    <h2>Neuro</h2>
-
-    <div class="project-entry">
-      <h3><a href="perspective-fmri.html">Predicting perspective-taking ability from resting-state fMRI connectivity data</a></h3>
-    </div>
-    <div class="project-entry">
-      <h3><a href="voice-gender-preference.html">The Effect of Voice Gender on Product Preference</a></h3>
-    </div>
-  </div>
-
-</div>
