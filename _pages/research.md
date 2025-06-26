@@ -21,13 +21,19 @@ read_time: false
     <h2 style="text-align:center;">Social</h2>
     <div style="margin-bottom: 2rem;">
       <a href="/projects/social/self-prioritization">
-        <strong>Self-prioritization effects on Nonspatial Working Memory</strong>
+        <strong>Group Bias on Perspective Taking in Non-Social Context</strong>
       </a>
       <p>...</p>
     </div>
     <div>
       <a href="/projects/social/meaningfulness-memory">
-        <strong>Meaningfulness in Working Memory</strong>
+        <strong>Context Processing in Ensemble Emotion Perception</strong>
+      </a>
+      <p>...</p>
+    </div>
+    <div>
+      <a href="/projects/memory/dimensions-social-interaction">
+        <strong>Dimension underlying the perception of social interaction</strong>
       </a>
       <p>...</p>
     </div>
@@ -38,19 +44,13 @@ read_time: false
     <h2 style="text-align:center;">Memory</h2>
     <div style="margin-bottom: 2rem;">
       <a href="/projects/memory/group-bias">
-        <strong>Group Bias on Perspective Taking in Non-Social Context</strong>
+        <strong>Self-prioritization effects on Nonspatial Working Memory</strong>
       </a>
       <p>...</p>
     </div>
     <div style="margin-bottom: 2rem;">
       <a href="/projects/memory/context-emotion">
-        <strong>Context Processing in Ensemble Emotion Perception</strong>
-      </a>
-      <p>...</p>
-    </div>
-    <div>
-      <a href="/projects/memory/dimensions-social-interaction">
-        <strong>Dimension underlying the perception of social interaction</strong>
+        <strong>Meaningfulness in Working Memory</strong>
       </a>
       <p>...</p>
     </div>
