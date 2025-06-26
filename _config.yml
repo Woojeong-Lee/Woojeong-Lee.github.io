@@ -298,7 +298,7 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # 블로그 글(_posts)
   - scope:
       path: ""
       type: posts
@@ -306,7 +306,22 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: false
       share: true
       related: true
+      classes: wide
+
+  # 일반 페이지(_pages 또는 루트의 md 파일)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      classes: wide
+
 
