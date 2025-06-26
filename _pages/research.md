@@ -9,6 +9,13 @@ header:
 classes: wide
 ---
 
+<style>
+  .page__content {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+  }
+</style>
+
 <p style="text-align:center;"> While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others!</p>
 
 <div style="display: flex; justify-content: space-between; gap: 2rem; margin-top: 2rem; width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto;">
