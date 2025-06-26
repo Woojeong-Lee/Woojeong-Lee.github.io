@@ -22,5 +22,14 @@ Research Aim: To investigate whether whole-brain resting-state fMRI connectivity
 - The Effect of Voice Gender on Product Preference
 Research Aim: To investigate how voice gender and age affect laptop purchase decisions and preferences
 
+- Group Bias on Perspective Taking in Non-Social Context
+Research Aim: To examine visual perspective taking in non-social context
+
+- Dimension underlying the perception of social interaction
+Research Aim: To identify dimensions underlying the perception of social 
+
+- Context Processing in Ensemble Emotion Perception
+Research Aim: To investigate how situational context shapes the perception of a crowd’s ensemble emotion using naturalistic stimuli
+
 
 
