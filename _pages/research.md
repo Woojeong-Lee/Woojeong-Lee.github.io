@@ -6,7 +6,6 @@ header:
   show_title: false
 ---<!-- /research/index.html or research.md (layout: none) -->
 
-<h1 style="text-align:center;">Recent Projects Overview</h1>
 <p style="text-align:center;">Explore our work across Social, Memory, and Neuro domains.</p>
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
