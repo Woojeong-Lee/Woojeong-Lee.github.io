@@ -310,6 +310,8 @@ defaults:
       share: false
       related: false
       classes: wide
+      sidebar:
+        disable: true
 
   # 일반 페이지(_pages 또는 루트의 md 파일)
   - scope:
@@ -323,5 +325,7 @@ defaults:
       share: false
       related: false
       classes: wide
+      sidebar:
+        disable: true
 
 
