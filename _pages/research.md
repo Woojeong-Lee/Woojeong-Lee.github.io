@@ -1,7 +1,7 @@
 ---
 title: ""
 layout: single
-permalink: /Research/
+permalink: /research/
 header:
   show_title: false
 ---
