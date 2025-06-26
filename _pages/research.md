@@ -3,7 +3,10 @@ title: "Research"
 layout: single
 permalink: /research/
 header:
+  overlay: false
   show_title: false
+  show_overlay_excerpt: false
+classes: wide
 ---
 
 <p style="text-align:center;"> While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others!</p>
