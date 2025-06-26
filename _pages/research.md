@@ -28,12 +28,12 @@ read_time: false
 }
 
 .research-column {
-  flex: 1 1 300px;
+  flex: 1 1 240px;
   background: #f9f9f9;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  min-width: 280px;
+  min-width: 220px;
 }
 
 .research-column h2 {
