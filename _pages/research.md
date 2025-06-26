@@ -66,10 +66,6 @@ read_time: false
 }
 </style>
 
-<p class="research-intro">
-  While I have organized my projects into the domains of <strong>Social</strong>, <strong>Memory</strong>, and <strong>Neuro</strong> for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
-</p>
-
 <div class="research-columns">
 
   <!-- Memory -->
