@@ -1,7 +1,7 @@
 ---
 title: ""
 layout: single
-permalink: /Publication/
+permalink: /publication/
 header:
   show_title: false
 ---
