@@ -1,8 +1,13 @@
 ---
+title: "Research"
+layout: single
 permalink: /research/
 header:
   show_title: false
+author_profile: false
+read_time: false
 ---
+
 
 <style>
   .page__content {
