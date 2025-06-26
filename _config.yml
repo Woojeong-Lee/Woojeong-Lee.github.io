@@ -89,10 +89,9 @@ yandex_site_verification :
 baidu_site_verification  :
 
 # header_pages:
-  - _pages/about.md
-  - _pages/social.md
-  - _pages/memory.md
-  - _pages/neuro.md
+  - _pages/education.md
+  - _pages/research.md
+  - _pages/publication.md
 
 # Social Sharing
 twitter:
