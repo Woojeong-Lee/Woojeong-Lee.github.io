@@ -2,123 +2,75 @@
 title: ""
 layout: single
 permalink: /research/
-author_profile: false
-read_time: false
----
+header:
+  show_title: false
+---<!-- /research/index.html or research.md (layout: none) -->
 
-<style>
-.research-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 2rem auto 1rem;
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.6;
-}
+<p style="text-align:center;"> While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.</p>
 
-/* 3단 레이아웃 */
-.research-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
+<div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
 
-.research-column {
-  flex: 1 1 240px;
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  min-width: 220px;
-}
+  <!-- Column 1: Social (기본 표시) -->
+  <div style="flex: 1;">
+    <h2 style="text-align:center;">Social</h2>
 
-.research-column h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.project-entry {
-  margin-bottom: 1.2rem;
-}
-
-.project-entry h3 {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 0.3rem;
-  word-break: keep-word;
-}
-
-.project-entry a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-.project-entry a:hover {
-  text-decoration: underline;
-}
-</style>
-
-<p class="research-intro">
-  While I have organized my projects into the domains of <strong>Social</strong>, <strong>Memory</strong>, and <strong>Neuro</strong> for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
-</p>
-
-<div class="research-columns">
-
-  <!-- Memory -->
-  <div class="research-column">
-    <h2>Memory</h2>
-
-    <div class="project-entry">
-      <h3><a href="self-prioritization.html">Self-prioritization effects on Nonspatial Working Memory</a></h3>
-      <p><!-- 연구 요약 예정 --></p>
+    <div style="margin-bottom: 2rem;">
+      <a href="/projects/social/self-prioritization">
+        <strong>Self-prioritization effects on Nonspatial Working Memory</strong>
+      </a>
+      <p>...</p>
     </div>
 
-    <div class="project-entry">
-      <h3><a href="meaningfulness-working-memory.html">Meaningfulness in Working Memory</a></h3>
-      <p><!-- 연구 요약 예정 --></p>
+    <div>
+      <a href="/projects/social/meaningfulness-memory">
+        <strong>Meaningfulness in Working Memory</strong>
+      </a>
+      <p>...</p>
     </div>
   </div>
 
-  <!-- Social -->
-  <div class="research-column">
-    <h2>Social</h2>
+  <!-- Column 2: Memory -->
+  <div style="flex: 1;">
+    <h2 style="text-align:center;">Memory</h2>
 
-    <div class="project-entry">
-      <h3><a href="group-bias.html">Group Bias on Perspective Taking in Non-Social Context</a></h3>
-      <p><!-- 연구 요약 예정 --></p>
+    <div style="margin-bottom: 1.5rem;">
+      <a href="/projects/memory/group-bias">
+        <strong>Group Bias on Perspective Taking in Non-Social Context</strong>
+      </a>
+      <p>...</p>
     </div>
 
-    <div class="project-entry">
-      <h3><a href="ensemble-emotion-context.html">Context Processing in Ensemble Emotion Perception</a></h3>
-      <p><!-- 연구 요약 예정 --></p>
+    <div style="margin-bottom: 1.5rem;">
+      <a href="/projects/memory/context-emotion">
+        <strong>Context Processing in Ensemble Emotion Perception</strong>
+      </a>
+      <p>...</p>
     </div>
 
-    <div class="project-entry">
-      <h3><a href="social-interaction-dimensions.html">Dimension underlying the perception of social interaction</a></h3>
-      <p><!-- 연구 요약 예정 --></p>
+    <div>
+      <a href="/projects/memory/dimensions-social-interaction">
+        <strong>Dimension underlying the perception of social interaction</strong>
+      </a>
+      <p>...</p>
     </div>
   </div>
 
-  <!-- Neuro -->
-  <div class="research-column">
-    <h2>Neuro</h2>
+  <!-- Column 3: Neuro -->
+  <div style="flex: 1;">
+    <h2 style="text-align:center;">Neuro</h2>
 
-    <div class="project-entry">
-      <h3><a href="perspective-fmri.html">Predicting perspective-taking ability from resting-state fMRI connectivity data</a></h3>
-      <p><!-- 연구 요약 예정 --></p>
+    <div style="margin-bottom: 2rem;">
+      <a href="/projects/neuro/perspective-fmri">
+        <strong>Predicting perspective-taking ability from resting-state fMRI connectivity data</strong>
+      </a>
+      <p>...</p>
     </div>
 
-    <div class="project-entry">
-      <h3><a href="voice-gender-preference.html">The Effect of Voice Gender on Product Preference</a></h3>
-      <p><!-- 연구 요약 예정 --></p>
+    <div>
+      <a href="/projects/neuro/voice-gender-product">
+        <strong>The Effect of Voice Gender on Product Preference</strong>
+      </a>
+      <p>...</p>
     </div>
   </div>
 
