@@ -1,11 +1,7 @@
 ---
-title: ""
-layout: single
 permalink: /research/
 header:
-  overlay: false
   show_title: false
-classes: wide
 ---
 
 <style>
