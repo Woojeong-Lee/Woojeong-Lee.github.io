@@ -304,11 +304,11 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: false
-      share: true
-      related: true
+      share: false
+      related: false
       classes: wide
 
   # 일반 페이지(_pages 또는 루트의 md 파일)
@@ -317,11 +317,11 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
       comments: false
-      share: true
-      related: true
+      share: false
+      related: false
       classes: wide
 
 
