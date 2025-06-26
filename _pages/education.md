@@ -1,7 +1,7 @@
 ---
 title: ""
 layout: single
-permalink: /Education/
+permalink: /education/
 header:
   show_title: false
 ---
