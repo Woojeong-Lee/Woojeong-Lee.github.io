@@ -4,32 +4,75 @@ layout: single
 permalink: /research/
 header:
   show_title: false
----
-<h1 style="text-align: center;">Research</h1>
+---<!-- /research/index.html or research.md (layout: none) -->
 
+<h1 style="text-align:center;">Recent Projects Overview</h1>
+<p style="text-align:center;">Explore our work across Social, Memory, and Neuro domains.</p>
 
-- Self-Prioritization Effects on Nonspatial Working Memory 
-Research Aim: To examine the self-prioritization effects on shape-based working memory
-[Exp1 Result](/data/analyzeSPE8VCS1.html)
-[Exp2 Result](/data/analyzeSPE8VCS2.html)
+<div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
 
-- Meaningfulness in Working Memory
-Research Aim: To examine whether the effect of meaningfulness extends to information that is spatially separated
+  <!-- Column 1: Social (기본 표시) -->
+  <div style="flex: 1;">
+    <h2 style="text-align:center;">Social</h2>
 
-- Predicting perspective-taking ability from resting-state fMRI connectivity data
-Research Aim: To investigate whether whole-brain resting-state fMRI connectivity can predict performance on a perspective-taking task
+    <div style="margin-bottom: 2rem;">
+      <a href="/projects/social/self-prioritization">
+        <strong>Self-prioritization effects on Nonspatial Working Memory</strong>
+      </a>
+      <p>...</p>
+    </div>
 
-- The Effect of Voice Gender on Product Preference
-Research Aim: To investigate how voice gender and age affect laptop purchase decisions and preferences
+    <div>
+      <a href="/projects/social/meaningfulness-memory">
+        <strong>Meaningfulness in Working Memory</strong>
+      </a>
+      <p>...</p>
+    </div>
+  </div>
 
-- Group Bias on Perspective Taking in Non-Social Context
-Research Aim: To examine visual perspective taking in non-social context
+  <!-- Column 2: Memory -->
+  <div style="flex: 1;">
+    <h2 style="text-align:center;">Memory</h2>
 
-- Dimension underlying the perception of social interaction
-Research Aim: To identify dimensions underlying the perception of social 
+    <div style="margin-bottom: 1.5rem;">
+      <a href="/projects/memory/group-bias">
+        <strong>Group Bias on Perspective Taking in Non-Social Context</strong>
+      </a>
+      <p>...</p>
+    </div>
 
-- Context Processing in Ensemble Emotion Perception
-Research Aim: To investigate how situational context shapes the perception of a crowd’s ensemble emotion using naturalistic stimuli
+    <div style="margin-bottom: 1.5rem;">
+      <a href="/projects/memory/context-emotion">
+        <strong>Context Processing in Ensemble Emotion Perception</strong>
+      </a>
+      <p>...</p>
+    </div>
 
+    <div>
+      <a href="/projects/memory/dimensions-social-interaction">
+        <strong>Dimension underlying the perception of social interaction</strong>
+      </a>
+      <p>...</p>
+    </div>
+  </div>
 
+  <!-- Column 3: Neuro -->
+  <div style="flex: 1;">
+    <h2 style="text-align:center;">Neuro</h2>
 
+    <div style="margin-bottom: 2rem;">
+      <a href="/projects/neuro/perspective-fmri">
+        <strong>Predicting perspective-taking ability from resting-state fMRI connectivity data</strong>
+      </a>
+      <p>...</p>
+    </div>
+
+    <div>
+      <a href="/projects/neuro/voice-gender-product">
+        <strong>The Effect of Voice Gender on Product Preference</strong>
+      </a>
+      <p>...</p>
+    </div>
+  </div>
+
+</div>
