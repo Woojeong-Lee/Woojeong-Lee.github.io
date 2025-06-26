@@ -1,24 +1,23 @@
 ---
-title: ""
+title: "Research"
 layout: single
 permalink: /research/
 header:
   show_title: false
 author_profile: false
 read_time: false
-classes: wide
 ---
 
-<div style="max-width: 100%; margin: 0 auto; padding: 2rem 1rem; text-align: center;">
-
-<p style="max-width: 800px; margin: 0 auto 2rem auto;">
-  While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
+<p style="text-align:center;">
+  While I have organized my projects into the domains of <strong>Social</strong>, <strong>Memory</strong>, and <strong>Neuro</strong> for clarity, they are often closely connected.<br>
+  Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
 </p>
 
-<div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; text-align: left; max-width: 1200px; margin: 0 auto;">
+<!-- 3-column layout container -->
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 2rem; margin: 3rem auto; max-width: 1200px;">
 
-  <!-- Column 1: Social -->
-  <div style="flex: 1; min-width: 250px;">
+  <!-- Social -->
+  <div style="flex: 1; max-width: 300px;">
     <h2 style="text-align:center;">Social</h2>
     <div style="margin-bottom: 2rem;">
       <a href="/projects/social/self-prioritization">
@@ -34,16 +33,16 @@ classes: wide
     </div>
   </div>
 
-  <!-- Column 2: Memory -->
-  <div style="flex: 1; min-width: 250px;">
+  <!-- Memory -->
+  <div style="flex: 1; max-width: 300px;">
     <h2 style="text-align:center;">Memory</h2>
-    <div style="margin-bottom: 1.5rem;">
+    <div style="margin-bottom: 2rem;">
       <a href="/projects/memory/group-bias">
         <strong>Group Bias on Perspective Taking in Non-Social Context</strong>
       </a>
       <p>...</p>
     </div>
-    <div style="margin-bottom: 1.5rem;">
+    <div style="margin-bottom: 2rem;">
       <a href="/projects/memory/context-emotion">
         <strong>Context Processing in Ensemble Emotion Perception</strong>
       </a>
@@ -57,8 +56,8 @@ classes: wide
     </div>
   </div>
 
-  <!-- Column 3: Neuro -->
-  <div style="flex: 1; min-width: 250px;">
+  <!-- Neuro -->
+  <div style="flex: 1; max-width: 300px;">
     <h2 style="text-align:center;">Neuro</h2>
     <div style="margin-bottom: 2rem;">
       <a href="/projects/neuro/perspective-fmri">
@@ -74,5 +73,4 @@ classes: wide
     </div>
   </div>
 
-</div>
 </div>
