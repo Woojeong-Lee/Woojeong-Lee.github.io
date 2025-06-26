@@ -8,12 +8,13 @@ author_profile: false
 read_time: false
 ---
 
+<div class="page__content">
+
 <style>
 .research-intro {
   text-align: left;
   max-width: 900px;
   margin: 2rem auto;
-  padding-left: 1rem;
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
@@ -126,5 +127,7 @@ read_time: false
       <p><!-- 연구 요약 작성 예정 --></p>
     </div>
   </div>
+
+</div>
 
 </div>
