@@ -2,9 +2,9 @@
 main:
   - title: "Home"
     url: /
-  - title: "Memory"
-    url: /memory/
-  - title: "Social"
-    url: /social/
-  - title: "Neuro"
-    url: /neuro/
+  - title: "Education"
+    url: /education/
+  - title: "Research"
+    url: /research/
+  - title: "Publication"
+    url: /publication/
