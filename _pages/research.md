@@ -6,7 +6,7 @@ header:
   show_title: false
 ---
 
-<p style="text-align:center;"> While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.</p>
+<p style="text-align:center;"> While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others!</p>
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
 
