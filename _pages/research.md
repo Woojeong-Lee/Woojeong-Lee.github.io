@@ -6,6 +6,71 @@ author_profile: false
 read_time: false
 ---
 
+<style>
+/* 상단 소개 문장 */
+.research-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 전체 3단 구성 */
+.research-columns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto; /* ✅ 가운데 정렬 핵심 */
+}
+
+/* 각 컬럼 */
+.research-column {
+  flex: 1;
+  min-width: 280px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 섹션 타이틀 */
+.research-column h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* 개별 프로젝트 */
+.project-entry {
+  margin-bottom: 1.5rem;
+}
+
+.project-entry h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+  word-break: keep-all;
+}
+
+.project-entry a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.project-entry a:hover {
+  text-decoration: underline;
+}
+</style>
+
 <p class="research-intro">
   While I have organized my projects into the domains of <strong>Social</strong>, <strong>Memory</strong>, and <strong>Neuro</strong> for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
 </p>
@@ -49,61 +114,3 @@ read_time: false
   </div>
 
 </div>
-
-<style>
-.research-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 2rem auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-.research-columns {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-.research-column {
-  flex: 1;
-  min-width: 280px;
-  max-width: 350px;
-  background: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.research-column h2 {
-  text-align: center;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.project-entry {
-  margin-bottom: 1.5rem;
-}
-
-.project-entry h3 {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 0.3rem;
-}
-
-.project-entry a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-.project-entry a:hover {
-  text-decoration: underline;
-}
-</style>
