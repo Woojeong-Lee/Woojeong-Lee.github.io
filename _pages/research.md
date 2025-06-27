@@ -6,10 +6,6 @@ header:
   show_title: false
 ---
 
-<p style="text-align:center; max-width: 800px; margin: 2rem auto;">
-  While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
-</p>
-
 <div style="text-align:center; margin-bottom: 2rem;">
   <button class="filter-button" onclick="filterSelection('all')">All</button>
   <button class="filter-button" onclick="filterSelection('social')">Social</button>
