@@ -1,6 +1,5 @@
-<!-- research.md -->
 ---
-title: "Research"
+title: ""
 layout: single
 permalink: /research/
 header:
