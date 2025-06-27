@@ -1,92 +1,112 @@
+<!-- research.md -->
 ---
-title: ""
+title: "Research"
 layout: single
 permalink: /research/
 header:
   show_title: false
-paginate: false
-previous_next: false 
 ---
 
-<div style="margin-top: 2em;">
-  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2em;">
-    <button class="tab-button" onclick="showTab('all')">All</button>
-    <button class="tab-button" onclick="showTab('social')">Social</button>
-    <button class="tab-button" onclick="showTab('memory')">Memory</button>
-    <button class="tab-button" onclick="showTab('neuro')">Neuro</button>
+<p style="text-align:center; max-width: 800px; margin: 2rem auto;">
+  While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.
+</p>
+
+<div style="text-align:center; margin-bottom: 2rem;">
+  <button class="filter-button" onclick="filterSelection('all')">All</button>
+  <button class="filter-button" onclick="filterSelection('social')">Social</button>
+  <button class="filter-button" onclick="filterSelection('memory')">Memory</button>
+  <button class="filter-button" onclick="filterSelection('neuro')">Neuro</button>
+</div>
+
+<div class="project-cards">
+  <div class="card social">
+    <h3><a href="/projects/social/self-prioritization">Self-Prioritization Effects on Nonspatial Working Memory</a></h3>
+    <p>Exploring how self-relevant cues influence working memory performance.</p>
+  </div>
+  <div class="card social">
+    <h3><a href="/projects/social/meaningfulness">Meaningfulness in Working Memory</a></h3>
+    <p>Investigating the role of meaningful stimuli in memory encoding and maintenance.</p>
+  </div>
+  <div class="card social">
+    <h3><a href="/projects/social/group-bias">Group Bias on Perspective Taking in Non-Social Context</a></h3>
+    <p>Understanding group-related cognitive bias in neutral contexts.</p>
   </div>
 
-  <!-- All Tab -->
-  <div class="tab-content" id="tab-all">
-    <ul>
-      <li><a href="/projects/self-prioritization">Self-Prioritization Effects on Nonspatial Working Memory</a></li>
-      <li><a href="/projects/meaningfulness-memory">Meaningfulness in Working Memory</a></li>
-      <li><a href="/projects/group-bias">Group Bias on Perspective Taking in Non-Social Context</a></li>
-      <li><a href="/projects/context-emotion">Context Processing in Ensemble Emotion Perception</a></li>
-      <li><a href="/projects/social-dimension">Dimension Underlying the Perception of Social Interaction</a></li>
-      <li><a href="/projects/perspective-fmri">Predicting Perspective-Taking Ability from Resting-State fMRI</a></li>
-      <li><a href="/projects/voice-gender">The Effect of Voice Gender on Product Preference</a></li>
-    </ul>
+  <div class="card memory">
+    <h3><a href="/projects/memory/context-emotion">Context Processing in Ensemble Emotion Perception</a></h3>
+    <p>How situational context shapes the perception of crowd emotion using naturalistic stimuli.</p>
+  </div>
+  <div class="card memory">
+    <h3><a href="/projects/memory/interaction-dimension">Dimension Underlying the Perception of Social Interaction</a></h3>
+    <p>Identifying core dimensions in social interaction perception.</p>
   </div>
 
-  <!-- Social Tab -->
-  <div class="tab-content" id="tab-social" style="display:none;">
-    <ul>
-      <li><a href="/projects/self-prioritization">Self-Prioritization Effects on Nonspatial Working Memory</a></li>
-      <li><a href="/projects/meaningfulness-memory">Meaningfulness in Working Memory</a></li>
-      <li><a href="/projects/group-bias">Group Bias on Perspective Taking in Non-Social Context</a></li>
-    </ul>
+  <div class="card neuro">
+    <h3><a href="/projects/neuro/predicting-empathy">Predicting Perspective-Taking Ability from Resting-State fMRI</a></h3>
+    <p>Using brain network features to predict cognitive empathy capacity.</p>
   </div>
-
-  <!-- Memory Tab -->
-  <div class="tab-content" id="tab-memory" style="display:none;">
-    <ul>
-      <li><a href="/projects/context-emotion">Context Processing in Ensemble Emotion Perception</a></li>
-      <li><a href="/projects/social-dimension">Dimension Underlying the Perception of Social Interaction</a></li>
-    </ul>
-  </div>
-
-  <!-- Neuro Tab -->
-  <div class="tab-content" id="tab-neuro" style="display:none;">
-    <ul>
-      <li><a href="/projects/perspective-fmri">Predicting Perspective-Taking Ability from Resting-State fMRI</a></li>
-      <li><a href="/projects/voice-gender">The Effect of Voice Gender on Product Preference</a></li>
-    </ul>
+  <div class="card neuro">
+    <h3><a href="/projects/neuro/voice-gender">The Effect of Voice Gender on Product Preference</a></h3>
+    <p>Examining how gendered voice cues shape product evaluations.</p>
   </div>
 </div>
 
 <script>
-  function showTab(tabName) {
-    const tabs = document.querySelectorAll(".tab-content");
-    tabs.forEach(tab => tab.style.display = "none");
-
-    const selected = document.getElementById("tab-" + tabName);
-    if (selected) selected.style.display = "block";
-  }
-
-  // 초기 탭 설정
-  document.addEventListener("DOMContentLoaded", function () {
-    showTab("all");
+function filterSelection(category) {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    if (category === 'all' || card.classList.contains(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
   });
+}
+filterSelection('all'); // Show all on load
 </script>
 
 <style>
-  .tab-button {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 0.6em 1em;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 6px;
-  }
-  .tab-button:hover {
-    background-color: #e0e0e0;
-  }
-  .tab-content ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  .tab-content li {
-    margin-bottom: 0.75em;
-  }
+.filter-button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.filter-button:hover {
+  background: #e0e0e0;
+}
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+.card a {
+  color: #007acc;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
 </style>
