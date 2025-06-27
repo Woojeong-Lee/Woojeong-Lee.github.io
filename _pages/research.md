@@ -4,6 +4,8 @@ layout: single
 permalink: /research/
 header:
   show_title: false
+paginate: false
+previous_next: false 
 ---
 
 <div style="margin-top: 2em;">
