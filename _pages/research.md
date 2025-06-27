@@ -93,7 +93,7 @@ filterSelection('all');
   background: #e0e0e0;
 }
 
-/* Card grid */
+/* Card grid layout */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -114,12 +114,18 @@ filterSelection('all');
   transform: translateY(-2px);
 }
 
+.card-link:hover h3,
+.card-link:hover p {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 1rem 1.2rem;
-  height: 400px;
+  padding: 0.8rem 1rem;
+  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -141,11 +147,11 @@ filterSelection('all');
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 8; /* show about 8 lines */
+  -webkit-line-clamp: 6; /* 줄 수 제한 */
   -webkit-box-orient: vertical;
 }
 
-/* Responsive */
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .card-link {
     width: 100%;
