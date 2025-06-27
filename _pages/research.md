@@ -1,3 +1,9 @@
+---
+title: "Research"
+layout: single
+permalink: /research/
+---
+
 <style>
 .project-grid {
   display: grid;
