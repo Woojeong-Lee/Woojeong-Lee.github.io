@@ -6,8 +6,6 @@ header:
   show_title: false
 ---
 
-<p style="text-align:center;">While I have organized my projects into the domains of Social, Memory, and Neuro for clarity, they are often closely connected. Many of my projects lie at the intersection of two or more of these areas, and insights gained from one have frequently contributed to the development of others.</p>
-
 <div style="margin-top: 2em;">
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2em;">
     <button class="tab-button" onclick="showTab('all')">All</button>
