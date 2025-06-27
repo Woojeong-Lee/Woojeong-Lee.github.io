@@ -328,4 +328,10 @@ defaults:
       sidebar:
         disable: true
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+
 
