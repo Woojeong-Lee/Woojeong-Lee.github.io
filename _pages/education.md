@@ -4,6 +4,8 @@ layout: single
 permalink: /education/
 read_time: false
 author_profile: false
+paginate: false
+previous_next: false 
 ---
 
 <div style="max-width: 700px; margin: 0 auto; padding-top: 2rem; font-size: 1.05rem; line-height: 1.6;">
