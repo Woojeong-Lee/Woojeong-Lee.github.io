@@ -24,8 +24,8 @@ header:
 
   <a href="/projects/social/groupbias_perspectivetaking" class="card-link social">
     <div class="card">
-      <h3>Group Conformity Without Minds: Testing Visual Perspective Taking with Non-Social Stimuli</h3>
-      <p>This study tests whether the group conformity effect in visual perspective taking depends on social reasoning or can be explained by ensemble coding. Non-social stimuli (triangles) replace avatars to isolate domain-general mechanisms.</p>
+      <h3>Group Conformity Without Minds</h3>
+      <p>This study tests whether the group conformity effect in visual perspective taking depends on social reasoning or can be explained by ensemble coding.</p>
     </div>
   </a>
 
@@ -59,7 +59,7 @@ header:
 
   <a href="/projects/neuro/voice-gender" class="card-link neuro">
     <div class="card">
-      <h3>Neural and Behavioral Effects of Voice Gender on Consumer Preferences</h3>
+      <h3>Voice Gender Effects on Consumer Preferences</h3>
       <p>Investigated how the gender and age of voices influence product evaluations and purchase decisions, using naturalistic stimuli, online behavioral tasks, and fNIRS neuroimaging.</p>
     </div>
   </a>
@@ -81,7 +81,7 @@ filterSelection('all');
 </script>
 
 <style>
-/* Filter Buttons */
+/* 버튼 */
 .filter-button {
   padding: 0.5rem 1rem;
   margin: 0 0.3rem;
@@ -95,50 +95,57 @@ filterSelection('all');
   background: #e0e0e0;
 }
 
+/* 카드 레이아웃 */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 2rem;
   margin-top: 1.5rem;
 }
 
-/* 카드 레이아웃 */
 .card-link {
-  width: 48%;
   text-decoration: none;
   color: inherit;
+  width: 48%;
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .card-link:hover .card {
-  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.25);
-  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
-/* 카드 디자인 */
 .card {
-  background: #f9fbff;
-  border: 1px solid #cce0ff;
-  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
   padding: 1.5rem;
-  min-height: 260px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
-/* 제목, 본문 */
 .card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
   line-height: 1.3;
-  color: #003366;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card p {
   font-size: 0.95rem;
-  color: #444;
-  line-height: 1.5;
+  color: #555;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 
 /* 모바일 대응 */
