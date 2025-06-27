@@ -1,9 +1,9 @@
 ---
-title: "Research"
+title: ""
 layout: single
 permalink: /research/
 header:
-  show_title: true
+  show_title: false
 ---
 
 <style>
