@@ -14,7 +14,6 @@ header:
 </div>
 
 <div class="project-cards">
-
   <a href="/projects/social/empathy_rtpj" class="card-link social">
     <div class="card">
       <h3>How Self–Other Distinction Shapes Empathy</h3>
@@ -63,7 +62,6 @@ header:
       <p>Investigated how the gender and age of voices influence product evaluations and purchase decisions, using naturalistic stimuli, online behavioral tasks, and fNIRS neuroimaging.</p>
     </div>
   </a>
-
 </div>
 
 <script>
@@ -81,7 +79,7 @@ filterSelection('all');
 </script>
 
 <style>
-/* 버튼 */
+/* Filter buttons */
 .filter-button {
   padding: 0.5rem 1rem;
   margin: 0 0.3rem;
@@ -95,7 +93,7 @@ filterSelection('all');
   background: #e0e0e0;
 }
 
-/* 카드 레이아웃 */
+/* Card grid */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -120,21 +118,20 @@ filterSelection('all');
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 1.5rem;
-  height: 300px;
+  padding: 1rem 1.2rem;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
 .card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
-  line-height: 1.3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .card p {
@@ -144,11 +141,11 @@ filterSelection('all');
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 8; /* show about 8 lines */
   -webkit-box-orient: vertical;
 }
 
-/* 모바일 대응 */
+/* Responsive */
 @media screen and (max-width: 768px) {
   .card-link {
     width: 100%;
