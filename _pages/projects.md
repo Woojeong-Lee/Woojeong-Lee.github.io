@@ -17,11 +17,10 @@ header:
 <!-- Project List -->
 <div class="project-list">
 
-  <!-- Example Project -->
   <div class="project-row social">
-    <div class="project-title">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span class="arrow">▶</span>
       <strong>How Self–Other Distinction Shapes Empathy</strong>
-      <button onclick="toggleDescription(this)">Show more</button>
     </div>
     <div class="project-description">
       This study uses rTPJ stimulation and MPT modeling to separate intentional, unintentional empathy and bias, clarifying the role of self–other distinction in empathy.
@@ -29,9 +28,9 @@ header:
   </div>
 
   <div class="project-row social">
-    <div class="project-title">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span class="arrow">▶</span>
       <strong>Group Conformity Without Minds</strong>
-      <button onclick="toggleDescription(this)">Show more</button>
     </div>
     <div class="project-description">
       Replicates avatar-based group bias study using triangles, testing whether effects reflect ensemble spatial coding rather than social cognition.
@@ -39,9 +38,9 @@ header:
   </div>
 
   <div class="project-row social">
-    <div class="project-title">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span class="arrow">▶</span>
       <strong>The Influence of Situational Context and Observer Emotion on Ensemble Perception of Crowd Emotion</strong>
-      <button onclick="toggleDescription(this)">Show more</button>
     </div>
     <div class="project-description">
       Explores how context and emotion modulate perception of group facial affect using naturalistic images and ensemble coding.
@@ -49,9 +48,9 @@ header:
   </div>
 
   <div class="project-row memory">
-    <div class="project-title">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span class="arrow">▶</span>
       <strong>Self-Prioritization Effects on Nonspatial Working Memory</strong>
-      <button onclick="toggleDescription(this)">Show more</button>
     </div>
     <div class="project-description">
       Tests whether self-association boosts working memory accuracy and speed, showing feature-specific rather than object-based self-prioritization.
@@ -59,9 +58,9 @@ header:
   </div>
 
   <div class="project-row memory">
-    <div class="project-title">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span class="arrow">▶</span>
       <strong>Does Meaningfulness Enhance Working Memory Across Spatial Locations?</strong>
-      <button onclick="toggleDescription(this)">Show more</button>
     </div>
     <div class="project-description">
       Investigates whether semantic content enhances memory of spatially distributed features using diffeomorphic stimuli.
@@ -69,9 +68,9 @@ header:
   </div>
 
   <div class="project-row neuro">
-    <div class="project-title">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span class="arrow">▶</span>
       <strong>Resting-State fMRI Predictors of Theory of Mind Capacity</strong>
-      <button onclick="toggleDescription(this)">Show more</button>
     </div>
     <div class="project-description">
       Uses SVM on HCP resting-state fMRI to predict individual differences in perspective-taking based on whole-brain connectivity.
@@ -79,9 +78,9 @@ header:
   </div>
 
   <div class="project-row neuro">
-    <div class="project-title">
+    <div class="project-header" onclick="toggleDescription(this)">
+      <span class="arrow">▶</span>
       <strong>Voice Gender Effects on Consumer Preferences</strong>
-      <button onclick="toggleDescription(this)">Show more</button>
     </div>
     <div class="project-description">
       fNIRS and behavioral studies show how voice gender and age affect product evaluations and purchase intent.
@@ -90,6 +89,7 @@ header:
 
 </div>
 
+<!-- CSS -->
 <style>
 .project-list {
   max-width: 750px;
@@ -98,34 +98,30 @@ header:
 }
 .project-row {
   border-bottom: 1px solid #ddd;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
 }
-.project-title {
+.project-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
 }
-.project-title strong {
+.project-header .arrow {
+  display: inline-block;
+  width: 1.2rem;
+  transition: transform 0.2s;
+  font-size: 1rem;
+  margin-right: 0.4rem;
+}
+.project-header strong {
   font-size: 1rem;
   color: #333;
-  flex: 1;
-  margin-right: 1rem;
-}
-.project-title button {
-  background: #f1f1f1;
-  border: none;
-  padding: 0.3rem 0.6rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.85rem;
-}
-.project-title button:hover {
-  background: #e0e0e0;
 }
 .project-description {
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
   font-size: 0.93rem;
   color: #555;
+  padding-left: 1.6rem;
   display: none;
 }
 .filter-button {
@@ -141,22 +137,22 @@ header:
   background: #e0e0e0;
 }
 @media screen and (max-width: 600px) {
-  .project-title {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .project-title button {
-    margin-top: 0.5rem;
+  .project-header {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 </style>
 
+<!-- JS -->
 <script>
-function toggleDescription(button) {
-  const desc = button.closest('.project-row').querySelector('.project-description');
-  const visible = desc.style.display === 'block';
-  desc.style.display = visible ? 'none' : 'block';
-  button.textContent = visible ? 'Show more' : 'Show less';
+function toggleDescription(header) {
+  const row = header.closest('.project-row');
+  const desc = row.querySelector('.project-description');
+  const arrow = header.querySelector('.arrow');
+  const isOpen = desc.style.display === 'block';
+  desc.style.display = isOpen ? 'none' : 'block';
+  arrow.textContent = isOpen ? '▶' : '▼';
 }
 
 function filterSelection(category) {
