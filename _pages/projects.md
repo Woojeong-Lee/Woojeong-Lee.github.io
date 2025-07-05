@@ -40,12 +40,13 @@ header:
   </details>
 
   <details class="project-item neuro">
-    <summary>Resting-State fMRI Predictors of Theory of Mind Capacity</summary>
+    <summary>Predicting perspective-taking ability from resting-state fMRI connectivity data </summary>
     <p>I examined whether individual differences in perspective-taking ability can be predicted from whole-brain resting-state connectivity using HCP data and SVM modeling.</p>
   </details>
 
   <details class="project-item neuro">
-    <summary>Voice Gender Effects on Consumer Preferences</summary>
+    <summary>The Role of Speaker Gender and Age in Shaping Product Preference: fNIRS study
+</summary>
     <p>We investigated how the gender and age of voices influence product evaluations and purchase decisions, using naturalistic stimuli, online behavioral tasks, and fNIRS neuroimaging.</p>
   </details>
 </div>
