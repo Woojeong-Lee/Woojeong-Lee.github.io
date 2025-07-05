@@ -20,7 +20,7 @@ header:
       <button class="toggle-button" onclick="toggleDescription(this)">Show more</button>
     </h3>
     <div class="description">
-      Empathy involves understanding and sharing others’ emotions. This study uses rTPJ stimulation and MPT modeling to dissociate intentional empathy, unintentional empathy, and response bias, revealing how self–other distinction contributes to empathic accuracy.
+Empathy, the ability to understand and share others’ emotions, is essential for social interaction. While often associated with emotional resonance, effective empathy also requires a clear distinction between self and other. The right temporoparietal junction (rTPJ), a region implicated in this distinction, has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process, overlooking its complex structure. Contemporary theories of pain empathy differentiate between automatic, bottom-up simulation and controlled, top-down regulation depending on context. These distinct components may rely on separable neural mechanisms. To address this, we apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, providing a more nuanced understanding of how self–other distinction contributes to empathic accuracy.
     </div>
   </div>
 
