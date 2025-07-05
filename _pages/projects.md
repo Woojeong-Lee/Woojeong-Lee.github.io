@@ -35,8 +35,8 @@ header:
   <details class="project-item social memory">
     <summary>Self-Prioritization Effects on Nonspatial Working Memory</summary>
     <p>Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al., 2019; Yin et al., 2019: Yin &amp; Chen, 2024), while others failed to find such an effect (Constable et al., 2019). Investigating the SPE on WM is important for understanding egocentric biases in cognition, since maintaining and evaluating information in WM is fundamental to decision-making and cognitive control (Baddeley, 2003; D’Esposito &amp; Postle, 2015). <br>The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task 
-    <a href="/data/analyzeSPE8VCS1.html" target="_blank">(Experiment 1)</a> or a reproduction task 
-    <a href="/data/analyzeSPE8VCS2.html" target="_blank">(Experiment 2)</a> for the shapes of objects presented in each color. Results revealed no difference in WM responses for shapes between the self and other conditions, but WM responses for colors were faster in the self condition than in the other. Therefore, the current study limits the scope of self-prioritization to self-associated features, rather than to entire objects that contain those features.</p>
+    <a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a> or a reproduction task 
+    <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a> for the shapes of objects presented in each color. Results revealed no difference in WM responses for shapes between the self and other conditions, but WM responses for colors were faster in the self condition than in the other. Therefore, the current study limits the scope of self-prioritization to self-associated features, rather than to entire objects that contain those features.</p>
   </details>
 
   <details class="project-item memory">
@@ -88,6 +88,14 @@ filterSelection('all', document.querySelector('.filter-button'));
   color: white;
 }
 
+.project-link {
+  color: #007acc;
+  text-decoration: none;
+}
+.project-link:hover {
+  text-decoration: underline;
+}
+
 .project-list {
   max-width: 1200px;
   margin: 0 auto;
@@ -98,7 +106,7 @@ filterSelection('all', document.querySelector('.filter-button'));
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 1rem 1.2rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   transition: background-color 0.3s;
