@@ -24,7 +24,7 @@ header:
 
   <details class="project-item social">
     <summary>Group Conformity Without Minds</summary>
-    <p>Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking, observing that participants' judgments of a target avatar’s viewpoint were biased toward the average viewpoint of surrounding avatars. This interpretation relies on the assumption that participants adopt the avatar’s perspective. However, such bias may alternatively arise from domain-general mechanisms, such as ensemble coding of directional information, without necessarily invoking social reasoning. To test this possibility, the present study replicates the original paradigm using non-social stimuli—specifically, replacing avatars with isosceles triangles. If the effect is replicated under these non-social conditions, it would suggest that the observed bias reflects ensemble-based spatial coding, rather than social-cognitive processes.</p>
+    <p>Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking, observing that participants' judgments of a target avatar’s viewpoint were biased toward the average viewpoint of surrounding avatars. This interpretation relies on the assumption that participants adopt the avatar’s perspective. However, such bias may alternatively arise from domain-general mechanisms, such as ensemble coding of directional information, without necessarily invoking social reasoning. To test this possibility, the present study replicates the original paradigm using non-social stimuli—specifically, replacing avatars with isosceles triangles.</p>
   </details>
 
   <details class="project-item social">
@@ -34,9 +34,9 @@ header:
 
   <details class="project-item social memory">
     <summary>Self-Prioritization Effects on Nonspatial Working Memory</summary>
-    <p>Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al., 2019; Yin et al., 2019: Yin &amp; Chen, 2024), while others failed to find such an effect (Constable et al., 2019). Investigating the SPE on WM is important for understanding egocentric biases in cognition, since maintaining and evaluating information in WM is fundamental to decision-making and cognitive control (Baddeley, 2003; D’Esposito &amp; Postle, 2015). <br>The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task 
+    <p>Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al., 2019; Yin et al., 2019; Yin &amp; Chen, 2024), while others failed to find such an effect (Constable et al., 2019). <br>The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task 
     <a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a> or a reproduction task 
-    <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a> for the shapes of objects presented in each color. Results revealed no difference in WM responses for shapes between the self and other conditions, but WM responses for colors were faster in the self condition than in the other. Therefore, the current study limits the scope of self-prioritization to self-associated features, rather than to entire objects that contain those features.</p>
+    <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>. Results revealed that WM responses for colors were faster in the self condition than in the other, though no shape differences emerged.</p>
   </details>
 
   <details class="project-item memory">
@@ -46,14 +46,13 @@ header:
 
   <details class="project-item neuro">
     <summary>Predicting Perspective-Taking Ability from Resting-State fMRI</summary>
-    <p>The study examined whether individual differences in perspective-taking ability can be predicted from whole-brain resting-state connectivity using HCP data and SVM modeling.</p>
+    <p>This study investigated whether individual differences in perspective-taking ability could be predicted from resting-state fMRI functional connectivity patterns using HCP data and machine learning models.</p>
   </details>
 
   <details class="project-item neuro">
     <summary>The Influence of Speaker Gender and Age on Product Preference</summary>
     <p>The study investigated how the gender and age of speakers affect product evaluations and purchase decisions, using naturalistic video stimuli and fNIRS.</p>
   </details>
-
 
 </div>
 
@@ -110,7 +109,17 @@ filterSelection('all', document.querySelector('.filter-button'));
   margin-bottom: 0rem;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.project-item:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+.project-item[open] {
+  background-color: #f0f7ff;
+  border: 1px solid #cce5ff;
 }
 
 .project-item summary {
@@ -134,9 +143,6 @@ filterSelection('all', document.querySelector('.filter-button'));
 .project-item[open] summary::before {
   content: '▼';
   transform: rotate(0deg);
-}
-.project-item[open] {
-  background-color: #f9f9f9;
 }
 .project-item[open] summary {
   color: #007acc;
