@@ -6,7 +6,6 @@ header:
   show_title: false
 ---
 
-<!-- Filter Buttons -->
 <div style="text-align:center; margin-bottom: 2rem;">
   <button class="filter-button" onclick="filterSelection('all')">All</button>
   <button class="filter-button" onclick="filterSelection('social')">Social</button>
@@ -14,119 +13,58 @@ header:
   <button class="filter-button" onclick="filterSelection('neuro')">Neuro</button>
 </div>
 
-<!-- Project List -->
 <div class="project-list">
+  <details class="project-item social">
+    <summary>How Self–Other Distinction Shapes Empathy</summary>
+    <p>Empathy, the ability to understand and share others’ emotions, is essential for social interaction... (생략)</p>
+  </details>
 
-  <div class="project-row social">
-    <div class="project-header" onclick="toggleDescription(this)">
-      <span class="arrow">▶</span>
-      <strong>How Self–Other Distinction Shapes Empathy</strong>
-    </div>
-    <div class="project-description">
-      This study uses rTPJ stimulation and MPT modeling to separate intentional, unintentional empathy and bias, clarifying the role of self–other distinction in empathy.
-    </div>
-  </div>
+  <details class="project-item social">
+    <summary>Group Conformity Without Minds</summary>
+    <p>Sun, Wang, and Geng (2024) reported a group conformity effect... (생략)</p>
+  </details>
 
-  <div class="project-row social">
-    <div class="project-header" onclick="toggleDescription(this)">
-      <span class="arrow">▶</span>
-      <strong>Group Conformity Without Minds</strong>
-    </div>
-    <div class="project-description">
-      Replicates avatar-based group bias study using triangles, testing whether effects reflect ensemble spatial coding rather than social cognition.
-    </div>
-  </div>
+  <details class="project-item social">
+    <summary>The Influence of Situational Context and Observer Emotion on Ensemble Perception of Crowd Emotion</summary>
+    <p>Using naturalistic stimuli, we investigate how situational context and observer emotion shape perception of crowd emotion.</p>
+  </details>
 
-  <div class="project-row social">
-    <div class="project-header" onclick="toggleDescription(this)">
-      <span class="arrow">▶</span>
-      <strong>The Influence of Situational Context and Observer Emotion on Ensemble Perception of Crowd Emotion</strong>
-    </div>
-    <div class="project-description">
-      Explores how context and emotion modulate perception of group facial affect using naturalistic images and ensemble coding.
-    </div>
-  </div>
+  <details class="project-item memory">
+    <summary>Self-Prioritization Effects on Nonspatial Working Memory</summary>
+    <p>Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly... (생략)</p>
+  </details>
 
-  <div class="project-row memory">
-    <div class="project-header" onclick="toggleDescription(this)">
-      <span class="arrow">▶</span>
-      <strong>Self-Prioritization Effects on Nonspatial Working Memory</strong>
-    </div>
-    <div class="project-description">
-      Tests whether self-association boosts working memory accuracy and speed, showing feature-specific rather than object-based self-prioritization.
-    </div>
-  </div>
+  <details class="project-item memory">
+    <summary>Does Meaningfulness Enhance Working Memory Across Spatial Locations?</summary>
+    <p>We examined meaningful objects facilitate the encoding of spatially distal features in visual working memory.</p>
+  </details>
 
-  <div class="project-row memory">
-    <div class="project-header" onclick="toggleDescription(this)">
-      <span class="arrow">▶</span>
-      <strong>Does Meaningfulness Enhance Working Memory Across Spatial Locations?</strong>
-    </div>
-    <div class="project-description">
-      Investigates whether semantic content enhances memory of spatially distributed features using diffeomorphic stimuli.
-    </div>
-  </div>
+  <details class="project-item neuro">
+    <summary>Resting-State fMRI Predictors of Theory of Mind Capacity</summary>
+    <p>I examined whether individual differences in perspective-taking ability can be predicted... (생략)</p>
+  </details>
 
-  <div class="project-row neuro">
-    <div class="project-header" onclick="toggleDescription(this)">
-      <span class="arrow">▶</span>
-      <strong>Resting-State fMRI Predictors of Theory of Mind Capacity</strong>
-    </div>
-    <div class="project-description">
-      Uses SVM on HCP resting-state fMRI to predict individual differences in perspective-taking based on whole-brain connectivity.
-    </div>
-  </div>
-
-  <div class="project-row neuro">
-    <div class="project-header" onclick="toggleDescription(this)">
-      <span class="arrow">▶</span>
-      <strong>Voice Gender Effects on Consumer Preferences</strong>
-    </div>
-    <div class="project-description">
-      fNIRS and behavioral studies show how voice gender and age affect product evaluations and purchase intent.
-    </div>
-  </div>
-
+  <details class="project-item neuro">
+    <summary>Voice Gender Effects on Consumer Preferences</summary>
+    <p>We investigated how the gender and age of voices influence product evaluations and purchase decisions.</p>
+  </details>
 </div>
 
-<!-- CSS -->
+<script>
+function filterSelection(category) {
+  const items = document.querySelectorAll('.project-item');
+  items.forEach(item => {
+    item.style.display = (category === 'all' || item.classList.contains(category)) ? 'block' : 'none';
+  });
+}
+filterSelection('all');
+</script>
+
 <style>
-.project-list {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-.project-row {
-  border-bottom: 1px solid #ddd;
-  padding: 0.7rem 0;
-}
-.project-header {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-}
-.project-header .arrow {
-  display: inline-block;
-  width: 1.2rem;
-  transition: transform 0.2s;
-  font-size: 1rem;
-  margin-right: 0.4rem;
-}
-.project-header strong {
-  font-size: 1rem;
-  color: #333;
-}
-.project-description {
-  margin-top: 0.5rem;
-  font-size: 0.93rem;
-  color: #555;
-  padding-left: 1.6rem;
-  display: none;
-}
+/* Filter buttons */
 .filter-button {
   padding: 0.5rem 1rem;
-  margin: 0 0.4rem;
+  margin: 0 0.3rem;
   background: #f0f0f0;
   border: none;
   border-radius: 6px;
@@ -136,30 +74,51 @@ header:
 .filter-button:hover {
   background: #e0e0e0;
 }
-@media screen and (max-width: 600px) {
-  .project-header {
-    flex-direction: row;
-    flex-wrap: wrap;
+
+/* Project List Styles */
+.project-list {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.project-item {
+  border-bottom: 1px solid #ddd;
+  padding: 0.8rem 0;
+}
+
+.project-item summary {
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.project-item summary::marker,
+.project-item summary::-webkit-details-marker {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.project-item p {
+  margin-top: 0.6rem;
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .project-item summary {
+    font-size: 0.95rem;
+  }
+  .project-item p {
+    font-size: 0.9rem;
   }
 }
 </style>
-
-<!-- JS -->
-<script>
-function toggleDescription(header) {
-  const row = header.closest('.project-row');
-  const desc = row.querySelector('.project-description');
-  const arrow = header.querySelector('.arrow');
-  const isOpen = desc.style.display === 'block';
-  desc.style.display = isOpen ? 'none' : 'block';
-  arrow.textContent = isOpen ? '▶' : '▼';
-}
-
-function filterSelection(category) {
-  const rows = document.querySelectorAll('.project-row');
-  rows.forEach(row => {
-    row.style.display = (category === 'all' || row.classList.contains(category)) ? 'block' : 'none';
-  });
-}
-filterSelection('all');
-</script>
