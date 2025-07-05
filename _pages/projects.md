@@ -146,7 +146,6 @@ filterSelection('all');
   font-size: 0.95rem;
   color: #555;
   line-height: 1.4;
-  height: calc(1.4em * 6); /* 6줄 제한 */
   display: -webkit-box;
   -webkit-line-clamp: 6;       /* 최대 줄 수 */
   -webkit-box-orient: vertical;
