@@ -17,12 +17,7 @@ header:
   <details class="project-item social">
     <summary>How Self–Other Distinction Shapes Empathy</summary>
 
-    <p><strong>Summary:</strong></p>
     <p>Empathy, the ability to understand and share others’ emotions, is essential for social interaction. While often associated with emotional resonance, effective empathy also requires a clear distinction between self and other. The right temporoparietal junction (rTPJ), a region implicated in this distinction, has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process, overlooking its complex structure. Contemporary theories of pain empathy differentiate between automatic, bottom-up simulation and controlled, top-down regulation depending on context. These distinct components may rely on separable neural mechanisms. To address this, we apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, providing a more nuanced understanding of how self–other distinction contributes to empathic accuracy.</p>
-
-    <p><strong>Methods & Results:</strong></p>
-    <iframe src="/data/analyzeSPE8VCS1.html" width="100%" height="500px" style="border:1px solid #ccc; border-radius: 6px;"></iframe>
-    <iframe src="/data/analyzeSPE8VCS2.html" width="100%" height="500px" style="border:1px solid #ccc; border-radius: 6px;"></iframe>
    </details>
    
   <details class="project-item social">
@@ -38,6 +33,9 @@ header:
   <details class="project-item memory">
     <summary>Self-Prioritization Effects on Nonspatial Working Memory</summary>
     <p>Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al., 2019; Yin et al., 2019: Yin & Chen, 2024), while others failed to find such an effect (Constable et al., 2019). Investigating the SPE on WM is important for understanding egocentric biases in cognition, since maintaining and evaluating information in WM is fundamental to decision-making and cognitive control (Baddeley, 2003; D’Esposito & Postle, 2015). The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task (Experiment 1) or a reproduction task (Experiment 2) for the shapes of objects presented in each color. Results revealed no difference in WM responses for shapes between the self and other conditions, but WM responses for colors were faster in the self condition than in the other. Therefore, the current study limits the scope of self-prioritization to self-associated features, rather than to entire objects that contain those features.</p>
+    <p>Methods & Results</p>
+      <a href="/data/analyzeSPE8VCS1.html" download>Download analyzeSPE8VCS1.html</a><br>
+      <a href="/data/analyzeSPE8VCS2.html" download>Download analyzeSPE8VCS2.html</a>  
   </details>
 
   <details class="project-item memory">
