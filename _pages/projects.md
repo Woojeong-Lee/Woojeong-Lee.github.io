@@ -29,7 +29,7 @@ Empathy, the ability to understand and share others’ emotions, is essential fo
       <button class="toggle-button" onclick="toggleDescription(this)">Show more</button>
     </h3>
     <div class="description">
-      To test whether visual perspective conformity arises from social cognition or domain-general mechanisms, this study replicates a group conformity task with non-social stimuli, using triangles instead of avatars to remove mentalizing cues.
+Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking, observing that participants' judgments of a target avatar’s viewpoint were biased toward the average viewpoint of surrounding avatars. This interpretation relies on the assumption that participants adopt the avatar’s perspective. However, such bias may alternatively arise from domain-general mechanisms, such as ensemble coding of directional information, without necessarily invoking social reasoning. To test this possibility, the present study replicates the original paradigm using non-social stimuli—specifically, replacing avatars with isosceles triangles. This manipulation is intended to eliminate any motivation for participants to attribute mental states to the stimuli, while preserving the directional cues present in the original task. If the effect is replicated under these non-social conditions, it would suggest that the observed bias reflects ensemble-based spatial coding, rather than social-cognitive processes.
     </div>
   </div>
 
@@ -38,7 +38,7 @@ Empathy, the ability to understand and share others’ emotions, is essential fo
       <button class="toggle-button" onclick="toggleDescription(this)">Show more</button>
     </h3>
     <div class="description">
-      Using naturalistic stimuli, we investigate how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.
+      Using naturalistic stimuli, we investigated how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.
     </div>
   </div>
 
