@@ -29,7 +29,7 @@ header:
 
   <details class="project-item social">
     <summary>The Influence of Situational Context and Observer Emotion on Ensemble Emotion Perception</summary>
-    <p>Using naturalistic stimuli, we investigate how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.</p>
+    <p>Using naturalistic stimuli, the study investigated how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.</p>
   </details>
 
   <details class="project-item social memory">
@@ -40,19 +40,20 @@ header:
   </details>
 
   <details class="project-item memory">
-    <summary>Does Meaningfulness Enhance Working Memory Across Spatial Locations?</summary>
-    <p>We examined whether meaningful objects facilitate the encoding of spatially distal features in visual working memory.</p>
+    <summary>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</summary>
+    <p>The study examined whether meaningful objects facilitate the encoding of spatially distal features in visual working memory.</p>
   </details>
 
   <details class="project-item neuro">
     <summary>Predicting Perspective-Taking Ability from Resting-State fMRI</summary>
-    <p>I examined whether individual differences in perspective-taking ability can be predicted from whole-brain resting-state connectivity using HCP data and SVM modeling.</p>
+    <p>The study examined whether individual differences in perspective-taking ability can be predicted from whole-brain resting-state connectivity using HCP data and SVM modeling.</p>
   </details>
 
   <details class="project-item neuro">
-    <summary>The Role of Speaker Gender and Age in Shaping Product Preference: fNIRS study</summary>
-    <p>We investigated how the gender and age of voices influence product evaluations and purchase decisions, using naturalistic stimuli, online behavioral tasks, and fNIRS neuroimaging.</p>
+    <summary>The Influence of Speaker Gender and Age on Product Preference</summary>
+    <p>The study investigated how the gender and age of speakers affect product evaluations and purchase decisions, using naturalistic video stimuli and fNIRS.</p>
   </details>
+
 
 </div>
 
