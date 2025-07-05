@@ -128,8 +128,6 @@ filterSelection('all');
   border-radius: 10px;
   padding: 0.8rem 1rem;
   height: 310px;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
 }
