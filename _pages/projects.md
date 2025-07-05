@@ -107,7 +107,7 @@ filterSelection('all', document.querySelector('.filter-button'));
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 1rem 1.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   transition: background-color 0.3s;
