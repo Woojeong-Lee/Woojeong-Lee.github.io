@@ -24,42 +24,44 @@ header:
   <a href="/projects/social/groupbias_perspectivetaking" class="card-link social">
     <div class="card">
       <h3>Group Conformity Without Minds</h3>
-      <p>This study tests whether the group conformity effect in visual perspective taking depends on social reasoning or can be explained by ensemble coding.</p>
+      <p>Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking, observing that participants' judgments of a target avatar’s viewpoint were biased toward the average viewpoint of surrounding avatars. This interpretation relies on the assumption that participants adopt the avatar’s perspective. However, such bias may alternatively arise from domain-general mechanisms, such as ensemble coding of directional information, without necessarily invoking social reasoning. To test this possibility, the present study replicates the original paradigm using non-social stimuli—specifically, replacing avatars with isosceles triangles. This manipulation is intended to eliminate any motivation for participants to attribute mental states to the stimuli, while preserving the directional cues present in the original task. If the effect is replicated under these non-social conditions, it would suggest that the observed bias reflects ensemble-based spatial coding, rather than social-cognitive processes.</p>
     </div>
   </a>
 
   <a href="/projects/social/cep" class="card-link social">
     <div class="card">
-      <h3>Context Processing in Ensemble Emotion Perception</h3>
-      <p>Using naturalistic stimuli, this research shows how contextual background and induced affect reshape ensemble emotion perception in crowds.</p>
+      <h3>The Influence of Situational Context and Observer Emotion on Ensemble Perception of Crowd Emotion</h3>
+      <p>Using naturalistic stimuli, we investigate how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.</p>
     </div>
   </a>
 
   <a href="/projects/memory/spe8vcs" class="card-link memory">
     <div class="card">
       <h3>Self-Prioritization Effects on Nonspatial Working Memory</h3>
-      <p>Explored whether self-prioritization effects arise in nonspatial working memory, given inconsistent findings in the literature.</p>
+      <p>Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al., 2019; Yin et al., 2019: Yin & Chen, 2024), while others failed to find such an effect (Constable et al., 2019). Investigating the SPE on WM is important for understanding egocentric biases in cognition, since maintaining and evaluating information in WM is fundamental to decision-making and cognitive control (Baddeley, 2003; D’Esposito & Postle, 2015).
+The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task (Experiment 1) or a reproduction task (Experiment 2) for the shapes of objects presented in each color. Results revealed no difference in WM responses for shapes between the self and other conditions, but WM responses for colors were faster in the self condition than in the other. Therefore, the current study limits the scope of self-prioritization to self-associated features, rather than to entire objects that contain those features.
+</p>
     </div>
   </a>
 
   <a href="/projects/memory/meaningfulness" class="card-link memory">
     <div class="card">
-      <h3>Spatial Generalization of Object Meaningfulness in Working Memory</h3>
-      <p>Investigated whether meaningful object representations facilitate the encoding of spatially distal features in visual working memory.</p>
+      <h3>Does Meaningfulness Enhance Working Memory Across Spatial Locations?</h3>
+      <p>We examined meaningful objects facilitate the encoding of spatially distal features in visual working memory.</p>
     </div>
   </a>
 
   <a href="/projects/neuro/predicting-empathy" class="card-link neuro">
     <div class="card">
       <h3>Resting-State fMRI Predictors of Theory of Mind Capacity</h3>
-      <p>Examined whether individual differences in perspective-taking ability can be predicted from whole-brain resting-state connectivity using HCP data and SVM modeling.</p>
+      <p>I examined whether individual differences in perspective-taking ability can be predicted from whole-brain resting-state connectivity using HCP data and SVM modeling.</p>
     </div>
   </a>
 
   <a href="/projects/neuro/voice-gender" class="card-link neuro">
     <div class="card">
       <h3>Voice Gender Effects on Consumer Preferences</h3>
-      <p>Investigated how the gender and age of voices influence product evaluations and purchase decisions, using naturalistic stimuli, online behavioral tasks, and fNIRS neuroimaging.</p>
+      <p>We investigated how the gender and age of voices influence product evaluations and purchase decisions, using naturalistic stimuli, online behavioral tasks, and fNIRS neuroimaging.</p>
     </div>
   </a>
 </div>
@@ -144,12 +146,13 @@ filterSelection('all');
   font-size: 0.95rem;
   color: #555;
   line-height: 1.4;
-  height: calc(1.4em * 6); /* 한 줄 높이 × 최대 줄 수 */
+  height: calc(1.4em * 6); /* 6줄 제한 */
   display: -webkit-box;
-  -webkit-line-clamp: 6;       /* 최대 6줄까지 표시 */
+  -webkit-line-clamp: 6;       /* 최대 줄 수 */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: normal;
 }
 
 /* Mobile responsiveness */
