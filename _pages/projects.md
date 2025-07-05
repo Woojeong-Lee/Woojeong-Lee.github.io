@@ -28,7 +28,7 @@ header:
   </details>
 
   <details class="project-item social">
-    <summary>The Influence of Situational Context and Observer Emotion on Ensemble Perception of Crowd Emotion</summary>
+    <summary>The Influence of Situational Context and Observer Emotion on Ensemble Emotion Perception</summary>
     <p>Using naturalistic stimuli, we investigate how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.</p>
   </details>
 
