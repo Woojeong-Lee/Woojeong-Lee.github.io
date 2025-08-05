@@ -45,11 +45,6 @@ header:
   </details>
 
   <details class="project-item neuro">
-    <summary>Predicting Perspective-Taking Ability from Resting-State fMRI</summary>
-    <p>This study investigated whether individual differences in perspective-taking ability could be predicted from resting-state fMRI functional connectivity patterns using HCP data and machine learning models.</p>
-  </details>
-
-  <details class="project-item neuro">
     <summary>The Influence of Speaker Gender and Age on Product Preference</summary>
     <p>The study investigated how the gender and age of speakers affect product evaluations and purchase decisions, using naturalistic video stimuli and fNIRS.</p>
   </details>
