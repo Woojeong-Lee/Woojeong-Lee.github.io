@@ -102,27 +102,31 @@ filterSelection('all', document.querySelector('.filter-button'));
 
 <style>
 /* ========= Filters (Underline Tabs) ========= */
-.project-filters{
-  text-align:center;
-  margin: 0 0 1.25rem;
-  border-bottom:1px solid #e5e7eb;
+/* ===== 필터 버튼 스타일 ===== */
+.project-filters {
+  text-align: center;
+  margin-bottom: 1.25rem;
 }
-.filter-button{
-  background:none;
-  border:none;
-  padding:.6rem 1rem;
-  margin:0;
-  font-size:1rem;
-  font-weight:600;
-  color:#6b7280;
-  cursor:pointer;
-  border-bottom:3px solid transparent; /* 밑줄 자리 확보 */
-  transition:color .2s ease, border-bottom-color .2s ease;
+
+.filter-button {
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.3rem;
+  background: #f3f4f6;       /* 연한 회색 배경 */
+  border: none;
+  border-radius: 9999px;     /* pill 모양 */
+  cursor: pointer;
+  font-weight: 500;
+  color: #111827;
+  transition: background 0.2s, color 0.2s;
 }
-.filter-button:hover{ color:#111827; }
-.filter-button.active{
-  color:#111827;
-  border-bottom-color:#2563eb; /* 활성 탭 밑줄 */
+
+.filter-button:hover {
+  background: #e5e7eb;       /* hover 시 조금 진한 회색 */
+}
+
+.filter-button.active {
+  background: #000;          /* 선택된 필터 → 검은색 배경 */
+  color: #fff;               /* 흰 글씨 */
 }
 /* 포커스 접근성 */
 .filter-button:focus-visible{ outline:2px solid #2563eb; outline-offset:2px; }
