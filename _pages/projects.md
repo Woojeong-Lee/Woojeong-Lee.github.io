@@ -61,6 +61,7 @@ header:
 
   <!-- Meaningfulness in VWM -->
   <section class="project-row memory no-image">
+    <div class="project-image">
       <img src="/assets/img/projects/Meaningfulness_method.png" alt="Self-Prioritization Effects">
     </div>
     <div class="project-text">
