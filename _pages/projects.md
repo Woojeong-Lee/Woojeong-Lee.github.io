@@ -75,7 +75,7 @@ header:
     <div class="project-text">
       <h2>The Influence of Speaker Gender and Age on Product Preference</h2>
       <p>
-        How do speaker gender and age shape product evaluations and purchase decisions? This study explored this using naturalistic video stimuli and fNIRS.
+        Using naturalistic video stimuli and fNIRS, this study examined the influence of speaker gender and age on product evaluations and purchase decisions.
       </p>
     </div>
   </section>
