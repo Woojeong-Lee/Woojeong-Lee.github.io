@@ -38,7 +38,7 @@ header:
     <div class="project-text">
       <h2>Contextual Effects on Ensemble Emotion Perception</h2>
       <p>
-    People can rapidly judge the average emotion of multiple faces—an ability known as ensemble perception. However, in real-life situations, context also plays a critical role in interpreting the mood of a crowd. For instance, the same group of excited individuals might be perceived differently depending on whether they are at a protest or a concert. This study examined whether context shapes ensemble emotion perception using naturalistic stimuli combining human figures with emotional backgrounds. Two experiments showed that both facial and background valence influenced judgments, indicating that context modulates how people perceive crowd emotion.
+    People can rapidly judge the average emotion of multiple faces—an ability known as ensemble perception. However, in everyday life, the context also shapes how we read a crowd’s mood. The same excited group might feel very different at a protest versus a concert. This study examined whether context changes ensemble emotion perception using naturalistic stimuli combining human figures with emotional backgrounds. Two experiments showed that both facial and background valence influenced judgments, indicating that context modulates how people perceive crowd emotion.
       </p>
     </div>
   </section>
