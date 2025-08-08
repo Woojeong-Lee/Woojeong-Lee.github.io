@@ -134,7 +134,7 @@ filterSelection('all', document.querySelector('.filter-button'));
   grid-template-columns: minmax(0, 40%) minmax(0, 60%);
   align-items: stretch;
   gap: 2rem;
-  padding: 1rem 0 2rem;
+  padding: 2rem 2 2rem;
 
   /* 구분감 + 부드러운 인터랙션 */
   border-radius: 8px;
@@ -153,7 +153,7 @@ filterSelection('all', document.querySelector('.filter-button'));
   justify-content: center;
 }
 .project-image img {
-  width: 100%;
+  width: 90%;
   height: auto;        /* 원본 비율 유지 */
   max-height: 90%;    /* 너무 커지지 않게 */
   object-fit: contain; /* 잘림 없이 비율 맞춤 */
