@@ -6,9 +6,10 @@ header:
   show_title: false
 ---
 
+<!-- START: Projects (Full-bleed, Image Left / Text Right) -->
 <div class="projects">
 
-  <!-- Plan 1: 이미지 왼쪽 / 글 오른쪽 -->
+  <!-- Plan 1 -->
   <section class="project-row">
     <div class="project-image">
       <img src="/assets/img/projects/SRE2_method1.png" alt="Plan 1 image">
@@ -21,26 +22,25 @@ header:
     </div>
   </section>
 
-  <!-- Plan 2: 이미지 없이 텍스트만 (필요시 그림 추가 가능) -->
+  <!-- Plan 2 (text only) -->
   <section class="project-row text-only">
     <div class="project-text">
       <h2>(Plan 2) How Self–Other Distinction Shapes Empathy</h2>
       <p>
-        Empathy—the ability to understand and share others’ emotions—is essential for social interaction. Effective empathy requires a clear self–other distinction. The right temporoparietal junction (rTPJ) has been shown to modulate empathic responses. We apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias, and test how rTPJ stimulation modulates each component.
+        Empathy—the ability to understand and share others’ emotions—is essential for social interaction. Effective empathy requires a clear self–other distinction. The right temporoparietal junction (rTPJ) has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process. We apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias, then examine how rTPJ stimulation modulates each component to clarify how self–other distinction contributes to empathic accuracy.
       </p>
     </div>
   </section>
 
-  <!-- Plan 3: 위치를 바꾸고 싶으면 .reverse 추가 -->
+  <!-- Plan 3 (reverse: image right / text left). 이미지가 준비되면 src 교체 -->
   <section class="project-row reverse">
     <div class="project-image">
-      <!-- 이미지가 없으면 div 자체를 지우면 되고, 있으면 이렇게 크게 씁니다 -->
-      <img src="/assets/img/projects/placeholder-triangle.png" alt="Group Conformity Without Minds (triangle stimuli)">
+      <img src="/assets/img/projects/placeholder-triangle.png" alt="Group Conformity Without Minds">
     </div>
     <div class="project-text">
       <h2>(Plan 3) Group Conformity Without Minds</h2>
       <p>
-        Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking. We test whether the bias can emerge from domain-general mechanisms (e.g., ensemble coding of directions) by replacing avatars with isosceles triangles.
+        Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking. We test whether the bias could arise from domain-general mechanisms—such as ensemble coding of directional information—by replacing avatars with isosceles triangles.
       </p>
     </div>
   </section>
@@ -66,7 +66,7 @@ header:
     <div class="project-text">
       <h2>Self-Prioritization Effects on Nonspatial Working Memory</h2>
       <p>
-        Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. We examined the SPE on shape-based working memory across two experiments:
+        Self-prioritization effect (SPE) is the tendency to process self-associated items more quickly and accurately. We examined SPE on shape-based working memory across two experiments:
         <a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>,
         <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>.
         Responses for colors were faster in the self condition than in the other, though no shape differences emerged.
@@ -74,7 +74,7 @@ header:
     </div>
   </section>
 
-  <!-- Meaningfulness in VWM (텍스트만) -->
+  <!-- Meaningfulness in VWM (text only) -->
   <section class="project-row text-only">
     <div class="project-text">
       <h2>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h2>
@@ -84,7 +84,7 @@ header:
     </div>
   </section>
 
-  <!-- fNIRS study (텍스트만) -->
+  <!-- fNIRS study (text only) -->
   <section class="project-row text-only">
     <div class="project-text">
       <h2>The Influence of Speaker Gender and Age on Product Preference</h2>
@@ -95,15 +95,22 @@ header:
   </section>
 
 </div>
+<!-- END: Projects -->
 
 <style>
-/* 페이지를 거의 꽉 채우기 */
+/* ---------- Full-bleed container (escape theme max-width) ---------- */
+/* 화면 전체 폭(뷰포트)으로 확장하고, 가운데 본문 컨테이너의 제한을 탈출 */
 .projects {
-  max-width: 100%;
-  padding: 0 1rem; /* 최소 안전 여백 */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 0 1rem;               /* 안전 여백. 완전 0을 원하면 0으로 바꿔도 됨 */
 }
 
-/* 2열: 이미지(큼) / 텍스트(조금) */
+/* (선택) Minimal Mistakes 같은 테마의 본문 패딩이 너무 클 때 */
+.page .page__inner-wrap { padding-left: 0; padding-right: 0; }
+
+/* ---------- Two-column big-media layout ---------- */
 .project-row {
   display: grid;
   grid-template-columns: minmax(0, 58%) minmax(0, 42%);
@@ -112,14 +119,14 @@ header:
   margin: 0 0 3rem 0;
 }
 
-/* 좌우 반전용 (원하면 섹션에 .reverse 추가) */
+/* 좌우 반전: 이미지 오른쪽 / 텍스트 왼쪽 */
 .project-row.reverse {
   grid-template-columns: minmax(0, 42%) minmax(0, 58%);
 }
 .project-row.reverse .project-image { order: 2; }
 .project-row.reverse .project-text  { order: 1; }
 
-/* 이미지: 섹션 높이를 꽉 채우도록 크게 */
+/* 이미지가 크게 보이도록 섹션 높이에 맞춰 확장 */
 .project-image {
   position: relative;
   overflow: hidden;
@@ -129,8 +136,8 @@ header:
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 420px;      /* 이미지가 시원하게 커 보이도록 */
-  object-fit: cover;      /* 자르더라도 꽉 채우기 */
+  min-height: 420px;        /* 더 크게 보이고 싶으면 520~640px로 올려도 좋아 */
+  object-fit: cover;        /* 자르더라도 꽉 채우기 */
   border-radius: 8px;
 }
 
@@ -142,20 +149,17 @@ header:
 }
 .project-text h2 {
   margin: 0 0 0.75rem;
-  font-size: clamp(1.25rem, 1vw + 1rem, 2rem);
+  font-size: clamp(1.35rem, 1vw + 1.1rem, 2.1rem);
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 .project-text p {
-  font-size: clamp(1rem, 0.4vw + 0.9rem, 1.125rem);
+  margin: 0;
+  font-size: clamp(1rem, 0.35vw + 0.95rem, 1.125rem);
   line-height: 1.8;
   color: #333;
-  margin: 0;
 }
-.project-link {
-  color: #0a6cff;
-  text-decoration: none;
-}
+.project-link { color: #0a6cff; text-decoration: none; }
 .project-link:hover { text-decoration: underline; }
 
 /* 이미지가 없는 섹션은 텍스트가 전체 폭 사용 */
@@ -163,24 +167,22 @@ header:
   grid-template-columns: 1fr;
 }
 
-/* 반응형: 모바일에서는 위/아래로 쌓기 */
+/* ---------- Responsive ---------- */
 @media (max-width: 900px) {
+  .projects {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding: 0 .75rem;
+  }
   .project-row,
   .project-row.reverse {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
-  .project-row.reverse .project-image { order: 0; }
-  .project-row.reverse .project-text  { order: 0; }
+  .project-row.reverse .project-image,
+  .project-row.reverse .project-text { order: 0; }
 
-  .project-image img {
-    min-height: 240px;
-  }
-}
-
-/* 아주 넓은 화면에서는 좌우 여백 조금만 더 */
-@media (min-width: 1600px) {
-  .projects {
-    padding: 0 1.5rem;
-  }
+  .project-image img { min-height: 240px; }
 }
 </style>
