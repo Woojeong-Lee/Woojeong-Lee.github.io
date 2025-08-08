@@ -36,7 +36,7 @@ header:
       <img src="/assets/img/projects/CEP_method.png" alt="Ensemble Emotion Perception">
     </div>
     <div class="project-text">
-      <h2>The Influence of Situational Context and Observer Emotion on Ensemble Emotion Perception</h2>
+      <h2>Contextual Effects on Ensemble Emotion Perception</h2>
       <p>
         Using naturalistic stimuli, we examine how situational context and observer emotion shape perceptions of a crowd’s ensemble emotion.
       </p>
