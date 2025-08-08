@@ -124,7 +124,7 @@ filterSelection('all', document.querySelector('.filter-button'));
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .page .page__inner-wrap { padding-left: 0; padding-right: 0; }
 
