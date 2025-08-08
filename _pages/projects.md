@@ -153,9 +153,9 @@ filterSelection('all', document.querySelector('.filter-button'));
   justify-content: center;
 }
 .project-image img {
-  width: 90%;
+  width: 95%;
   height: auto;        /* 원본 비율 유지 */
-  max-height: 90%;    /* 너무 커지지 않게 */
+  max-height: 95%;    /* 너무 커지지 않게 */
   object-fit: contain; /* 잘림 없이 비율 맞춤 */
   border-radius: 6px;
 }
@@ -198,16 +198,19 @@ filterSelection('all', document.querySelector('.filter-button'));
 .project-link:hover { text-decoration: underline; }
 
 /* ========= Hover/Focus 인터랙션 (커서+그림자만) ========= */
-.project-row:hover {
+/* 이미지 호버 */
+.project-image:hover {
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transform: translateY(-2px);
 }
-.project-row:focus-within {
+/* 제목 호버 */
+.project-text h2:hover {
+  cursor: pointer;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transform: translateY(-2px);
-  background-color: #fafbfc;
 }
+
 
 /* ========= Responsive ========= */
 @media (max-width: 960px) {
