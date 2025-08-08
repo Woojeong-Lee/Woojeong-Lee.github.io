@@ -158,9 +158,9 @@ filterSelection('all', document.querySelector('.filter-button'));
   transform: translateY(-2px);
 }
 .project-image img {
-  width: 95%;
+  width: 100%;
   height: auto;
-  max-height: 95%;
+  max-height: 100%;
   object-fit: contain;
   border-radius: 6px;
 }
