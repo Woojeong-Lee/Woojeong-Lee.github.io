@@ -25,7 +25,7 @@ header:
     <div class="project-text">
       <h2>Neural Mechanisms of Simulating Others' Mind</h2>
       <p>
-        How does the brain represent another person’s thoughts? Participants made judgments about themselves and the president, from both their own perspective and that of a close friend. Whole-brain searchlight RSA identified brain regions whose activity patterns reflected the friend’s perspective. ROI-based MVPA then tested cross-condition generalization, examining whether classifiers trained on self-related judgments could also decode president-related judgments.
+        How does the brain represent another person’s thoughts? Participants made judgments about themselves and the president, from both their own perspective and that of a friend. Whole-brain searchlight RSA identified brain regions whose activity patterns reflected the friend’s perspective. ROI-based MVPA then tested cross-condition generalization, examining whether classifiers trained on self-related judgments could also decode president-related judgments.
       </p>
     </div>
   </section>
