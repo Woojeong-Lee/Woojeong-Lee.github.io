@@ -133,7 +133,7 @@ filterSelection('all', document.querySelector('.filter-button'));
   display: grid;
   grid-template-columns: minmax(0, 40%) minmax(0, 60%);
   align-items: stretch;
-  gap: 2rem;
+  gap: 5rem;
   padding: 2rem 3 2rem;
 
   /* 구분감 + 부드러운 인터랙션 */
