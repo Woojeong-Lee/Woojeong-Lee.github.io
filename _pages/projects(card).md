@@ -6,82 +6,150 @@ header:
   show_title: false
 ---
 
+<!-- Filter Buttons -->
 <div style="text-align:center; margin-bottom: 2rem;">
-  <button class="filter-button" onclick="filterSelection('all')">All</button>
-  <button class="filter-button" onclick="filterSelection('social')">Social</button>
-  <button class="filter-button" onclick="filterSelection('memory')">Memory</button>
-  <button class="filter-button" onclick="filterSelection('neuro')">Neuro</button>
+  <button class="filter-button active" onclick="filterSelection('all', this)">All</button>
+  <button class="filter-button" onclick="filterSelection('social', this)">Social</button>
+  <button class="filter-button" onclick="filterSelection('memory', this)">Memory</button>
+  <button class="filter-button" onclick="filterSelection('neuro', this)">Neuro</button>
 </div>
 
-<div class="project-cards">
-  <a href="/projects/social/empathy_rtpj" class="card-link social">
-    <div class="card">
-      <h3>How Self–Other Distinction Shapes Empathy</h3>
-      <p>Empathy, the ability to understand and share others’ emotions, is essential for social interaction. While often associated with emotional resonance, effective empathy also requires a clear distinction between self and other. The right temporoparietal junction (rTPJ), a region implicated in this distinction, has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process, overlooking its complex structure. Contemporary theories of pain empathy differentiate between automatic, bottom-up simulation and controlled, top-down regulation depending on context. These distinct components may rely on separable neural mechanisms. To address this, we apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, providing a more nuanced understanding of how self–other distinction contributes to empathic accuracy.</p>
-    </div>
-  </a>
+<!-- Cards in a 2-column responsive grid -->
+<div class="project-grid">
 
-  <a href="/projects/social/groupbias_perspectivetaking" class="card-link social">
-    <div class="card">
-      <h3>Group Conformity Without Minds</h3>
-      <p>Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking, observing that participants' judgments of a target avatar’s viewpoint were biased toward the average viewpoint of surrounding avatars. This interpretation relies on the assumption that participants adopt the avatar’s perspective. However, such bias may alternatively arise from domain-general mechanisms, such as ensemble coding of directional information, without necessarily invoking social reasoning. To test this possibility, the present study replicates the original paradigm using non-social stimuli—specifically, replacing avatars with isosceles triangles. This manipulation is intended to eliminate any motivation for participants to attribute mental states to the stimuli, while preserving the directional cues present in the original task. If the effect is replicated under these non-social conditions, it would suggest that the observed bias reflects ensemble-based spatial coding, rather than social-cognitive processes.</p>
+  <!-- Card 1 -->
+  <article class="project-card social neuro">
+    <figure class="project-figure">
+      <img
+        src="/assets/img/projects/SRE2_method1.png"
+        loading="lazy"
+        alt="Neural mechanisms project illustration"
+      >
+    </figure>
+    <h3 class="project-title">(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</h3>
+    <p class="project-text">
+      How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA was used to identify brain regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then evaluated cross-condition generalization, testing whether classifiers trained on self-related judgments could decode president-related judgments.
+    </p>
+    <div class="project-actions">
+      <button class="read-more" onclick="toggleMore(this)">Read more</button>
     </div>
-  </a>
+  </article>
 
-  <a href="/projects/social/cep" class="card-link social">
-    <div class="card">
-      <h3>The Influence of Situational Context and Observer Emotion on Ensemble Perception of Crowd Emotion</h3>
-      <p>Using naturalistic stimuli, we investigate how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.</p>
+  <!-- Card 2 -->
+  <article class="project-card social neuro">
+    <figure class="project-figure">
+      <img
+        src="/assets/img/projects/placeholder_neuro.png"
+        loading="lazy"
+        alt="Self–Other distinction and empathy"
+        onerror="this.src='/assets/img/projects/CEP_method.png'"
+      >
+    </figure>
+    <h3 class="project-title">(Plan 2) How Self–Other Distinction Shapes Empathy</h3>
+    <p class="project-text">
+      Empathy—the ability to understand and share others’ emotions—is essential for social interaction. Effective empathy requires a clear self–other distinction. The right temporoparietal junction (rTPJ), a region implicated in this distinction, has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process, overlooking its complex structure. Contemporary theories of pain empathy differentiate between automatic, bottom-up simulation and controlled, top-down regulation depending on context. These distinct components may rely on separable neural mechanisms. To address this, we apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, providing a more nuanced understanding of how self–other distinction contributes to empathic accuracy.
+    </p>
+    <div class="project-actions">
+      <button class="read-more" onclick="toggleMore(this)">Read more</button>
     </div>
-  </a>
+  </article>
 
-  <a href="/projects/memory/spe8vcs" class="card-link memory">
-    <div class="card">
-      <h3>Self-Prioritization Effects on Nonspatial Working Memory</h3>
-      <p>Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al., 2019; Yin et al., 2019: Yin & Chen, 2024), while others failed to find such an effect (Constable et al., 2019). Investigating the SPE on WM is important for understanding egocentric biases in cognition, since maintaining and evaluating information in WM is fundamental to decision-making and cognitive control (Baddeley, 2003; D’Esposito & Postle, 2015).
-The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task (Experiment 1) or a reproduction task (Experiment 2) for the shapes of objects presented in each color. Results revealed no difference in WM responses for shapes between the self and other conditions, but WM responses for colors were faster in the self condition than in the other. Therefore, the current study limits the scope of self-prioritization to self-associated features, rather than to entire objects that contain those features.
-</p>
+  <!-- Card 3 -->
+  <article class="project-card social">
+    <h3 class="project-title">(Plan 3) Group Conformity Without Minds</h3>
+    <p class="project-text">
+      Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking, observing that participants' judgments of a target avatar’s viewpoint were biased toward the average viewpoint of surrounding avatars. This interpretation relies on the assumption that participants adopt the avatar’s perspective. However, such bias may alternatively arise from domain-general mechanisms, such as ensemble coding of directional information, without necessarily invoking social reasoning. To test this possibility, the present study replicates the original paradigm using non-social stimuli—specifically, replacing avatars with isosceles triangles.
+    </p>
+    <div class="project-actions">
+      <button class="read-more" onclick="toggleMore(this)">Read more</button>
     </div>
-  </a>
+  </article>
 
-  <a href="/projects/memory/meaningfulness" class="card-link memory">
-    <div class="card">
-      <h3>Does Meaningfulness Enhance Working Memory Across Spatial Locations?</h3>
-      <p>We examined meaningful objects facilitate the encoding of spatially distal features in visual working memory.</p>
+  <!-- Card 4 -->
+  <article class="project-card social">
+    <figure class="project-figure">
+      <img
+        src="/assets/img/projects/CEP_method.png"
+        loading="lazy"
+        alt="Context and observer emotion on ensemble perception"
+      >
+    </figure>
+    <h3 class="project-title">The Influence of Situational Context and Observer Emotion on Ensemble Emotion Perception</h3>
+    <p class="project-text">
+      Using naturalistic stimuli, the study investigated how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.
+    </p>
+    <div class="project-actions">
+      <button class="read-more" onclick="toggleMore(this)">Read more</button>
     </div>
-  </a>
+  </article>
 
-  <a href="/projects/neuro/predicting-empathy" class="card-link neuro">
-    <div class="card">
-      <h3>Resting-State fMRI Predictors of Theory of Mind Capacity</h3>
-      <p>I examined whether individual differences in perspective-taking ability can be predicted from whole-brain resting-state connectivity using HCP data and SVM modeling.</p>
+  <!-- Card 5 -->
+  <article class="project-card social memory">
+    <figure class="project-figure">
+      <img
+        src="/assets/img/projects/SPE_method.png"
+        loading="lazy"
+        alt="Self-prioritization effects on working memory"
+      >
+    </figure>
+    <h3 class="project-title">Self-Prioritization Effects on Nonspatial Working Memory</h3>
+    <p class="project-text">
+      Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al, 2019; Yin et al, 2019; Yin &amp; Chen, 2024), while others failed to find such an effect (Constable et al., 2019). The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task (Experiment 1) or a reproduction task (Experiment 2). Results revealed that WM responses for colors were faster in the self condition than in the other, though no shape differences emerged.
+      <a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">Experiment 1</a>
+      <span aria-hidden="true">·</span>
+      <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">Experiment 2</a>
+    </p>
+    <div class="project-actions">
+      <button class="read-more" onclick="toggleMore(this)">Read more</button>
     </div>
-  </a>
+  </article>
 
-  <a href="/projects/neuro/voice-gender" class="card-link neuro">
-    <div class="card">
-      <h3>Voice Gender Effects on Consumer Preferences</h3>
-      <p>We investigated how the gender and age of voices influence product evaluations and purchase decisions, using naturalistic stimuli, online behavioral tasks, and fNIRS neuroimaging.</p>
+  <!-- Card 6 -->
+  <article class="project-card memory">
+    <h3 class="project-title">The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h3>
+    <p class="project-text">
+      The study examined whether meaningful objects facilitate the encoding of spatially distal features in visual working memory.
+    </p>
+    <div class="project-actions">
+      <button class="read-more" onclick="toggleMore(this)">Read more</button>
     </div>
-  </a>
+  </article>
+
+  <!-- Card 7 -->
+  <article class="project-card neuro">
+    <h3 class="project-title">The Influence of Speaker Gender and Age on Product Preference</h3>
+    <p class="project-text">
+      The study investigated how the gender and age of speakers affect product evaluations and purchase decisions, using naturalistic video stimuli and fNIRS.
+    </p>
+    <div class="project-actions">
+      <button class="read-more" onclick="toggleMore(this)">Read more</button>
+    </div>
+  </article>
+
 </div>
 
 <script>
-function filterSelection(category) {
-  const links = document.querySelectorAll('.card-link');
-  links.forEach(link => {
-    if (category === 'all' || link.classList.contains(category)) {
-      link.style.display = 'block';
-    } else {
-      link.style.display = 'none';
-    }
+function filterSelection(category, el) {
+  const items = document.querySelectorAll('.project-card');
+  items.forEach(item => {
+    item.style.display = (category === 'all' || item.classList.contains(category)) ? 'block' : 'none';
   });
+  document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+  if (el) el.classList.add('active');
 }
-filterSelection('all');
+
+function toggleMore(btn) {
+  const card = btn.closest('.project-card');
+  const text = card.querySelector('.project-text');
+  const expanded = text.classList.toggle('expanded');
+  btn.textContent = expanded ? 'Show less' : 'Read more';
+}
+
+// Initialize
+filterSelection('all', document.querySelector('.filter-button'));
 </script>
 
 <style>
-/* Filter buttons */
 .filter-button {
   padding: 0.5rem 1rem;
   margin: 0 0.3rem;
@@ -90,75 +158,66 @@ filterSelection('all');
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
+  transition: background 0.2s;
 }
-.filter-button:hover {
-  background: #e0e0e0;
+.filter-button:hover { background: #e0e0e0; }
+.filter-button.active { background: #007acc; color: white; }
+
+.project-link { color: #007acc; text-decoration: none; }
+.project-link:hover { text-decoration: underline; }
+
+/* Grid: two cards per row, 1 on small screens */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-/* Card grid layout */
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-.card-link {
-  text-decoration: none;
-  color: inherit;
-  width: 48%;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card-link:hover .card {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-
-.card-link:hover h3,
-.card-link:hover p {
-  text-decoration: none;
-  color: inherit;
-}
-
-.card {
-  background: #fff;
-  border: 1px solid #ddd;
+/* Card style */
+.project-card {
+  border: 1px solid #eee;
   border-radius: 10px;
-  padding: 0.8rem 1rem;
-  height: 310px;
-  justify-content: flex-start;
-  overflow: hidden;
+  padding: 0; /* we'll space inner elements separately */
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s, transform 0.2s, background-color 0.3s;
 }
+.project-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.08); transform: translateY(-1px); }
 
-.card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.6rem;
-  line-height: 1.35;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
+.project-figure { margin: 0; }
+.project-figure img { width: 100%; height: auto; display: block; border-radius: 10px 10px 0 0; }
 
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.4;
-  height: auto; /* height 대신 max-height로 제한 */
-  max-height: calc(1.4em * 6); /* 6줄 */
+.project-title { font-size: 1.05rem; font-weight: 700; margin: 0.9rem 1rem 0.4rem; }
+
+.project-text {
+  margin: 0 1rem;
+  color: #444;
+  line-height: 1.7;
+  font-size: 1.02rem;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 3; /* show 3 lines by default */
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
+  position: relative;
 }
+.project-text.expanded { -webkit-line-clamp: unset; overflow: visible; }
 
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-  .card-link {
-    width: 100%;
-    max-width: 95%;
-  }
+.project-actions { display: flex; justify-content: flex-end; padding: 0.6rem 1rem 1rem; }
+.read-more {
+  padding: 0.45rem 0.8rem;
+  font-size: 0.9rem;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.read-more:hover { filter: brightness(0.95); }
+
+@media screen and (max-width: 900px) {
+  .project-grid { grid-template-columns: 1fr; }
 }
 </style>
