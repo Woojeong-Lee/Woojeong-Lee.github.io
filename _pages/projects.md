@@ -128,20 +128,19 @@ filterSelection('all', document.querySelector('.filter-button'));
 }
 .page .page__inner-wrap { padding-left: 0; padding-right: 0; }
 
-/* ========= Two-column layout: all items image-left / text-right ========= */
+/* ========= Two-column layout ========= */
 .project-row {
   display: grid;
   grid-template-columns: minmax(0, 40%) minmax(0, 60%);
   align-items: stretch;
   gap: 5rem;
-  padding: 2rem 3 2rem;
+  padding: 2rem 3rem 2rem;  
 
-  /* 구분감 + 부드러운 인터랙션 */
   border-radius: 8px;
-  transition: box-shadow .18s ease, transform .18s ease, background-color .18s ease;
+  transition: box-shadow .18s ease, transform .18s ease;
 }
 
-/* 구분선으로 프로젝트 간 분리 */
+/* 구분선 */
 .project-row + .project-row {
   border-top: 2px solid #e9edf3;
 }
@@ -151,39 +150,37 @@ filterSelection('all', document.querySelector('.filter-button'));
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow .18s ease, transform .18s ease; /* 이미지 hover 애니메이션 */
+}
+.project-image:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
 }
 .project-image img {
   width: 95%;
-  height: auto;        /* 원본 비율 유지 */
-  max-height: 95%;    /* 너무 커지지 않게 */
-  object-fit: contain; /* 잘림 없이 비율 맞춤 */
+  height: auto;
+  max-height: 95%;
+  object-fit: contain;
   border-radius: 6px;
 }
 
-/* 이미지가 없는 항목: 플레이스홀더 패널 유지(정렬 통일) */
-/* 이미지 없는 항목: "Coming Soon" 한 번만 중앙에 표시 */
+/* 이미지 없는 항목: Coming Soon 중앙 표시 */
 .project-row.no-image .project-image {
-  position: relative;              /* ::before를 절대배치로 중앙 정렬하기 위함 */
-  min-height: 320px;             
-  border: 1px dashed #d7deea;      /* 원하면 지워도 됨 */
-  background: #f8fafc;             /* 원하면 지워도 됨 */
-  display: block;                  /* flex 참여 이슈 방지 */
+  position: relative;
+  min-height: 320px;
+  border: 1px dashed #d7deea;
+  background: #f8fafc;
+  display: block;
 }
 .project-row.no-image .project-image::before {
   content: "Coming Soon";
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: absolute; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.05rem;              /* 크기 조절 */
-  color: #9aa3af;                  /* 은은한 회색 */
-  font-weight: 500;
-  font-style: italic;
-  white-space: nowrap;             /* 세로로 꺾이는 현상 방지 */
-  pointer-events: none;            /* 마우스 이벤트 방해 X */
-  user-select: none;               /* 드래그 방지 (선택적) */
+  font-size: 1.05rem; color: #9aa3af;
+  font-weight: 500; font-style: italic;
+  white-space: nowrap; pointer-events: none; user-select: none;
 }
-
 
 /* 텍스트 */
 .project-text {
@@ -193,10 +190,14 @@ filterSelection('all', document.querySelector('.filter-button'));
 }
 .project-text h2 {
   margin: 0 0 .5rem;
-  font-size: clamp(1rem, 0.6vw + 0.9rem, 1.4rem); 
+  font-size: clamp(1rem, 0.6vw + 0.9rem, 1.4rem);
   line-height: 1.3;
   letter-spacing: -0.01em;
   color: #111827;
+}
+.project-text h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 .project-text p {
   margin: 0;
@@ -207,16 +208,9 @@ filterSelection('all', document.querySelector('.filter-button'));
 .project-link { color: #0a6cff; text-decoration: none; }
 .project-link:hover { text-decoration: underline; }
 
-/* ========= Hover/Focus 인터랙션 (커서+그림자만) ========= */
-/* 제목 호버 */
-.project-text h2:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 /* ========= Responsive ========= */
 @media (max-width: 960px) {
-  .projects { margin-left: 0; margin-right: 0; width: 100%; padding: 3rem; }
+  .projects { margin-left: 0; margin-right: 0; width: 100%; padding: 0 .75rem; }
   .project-row { grid-template-columns: 1fr; gap: 1.25rem; }
   .project-image img,
   .project-row.no-image .project-image { min-height: 240px; }
@@ -224,11 +218,7 @@ filterSelection('all', document.querySelector('.filter-button'));
 
 /* 모션 민감 사용자 배려 */
 @media (prefers-reduced-motion: reduce) {
-  .project-row {
-    transition: box-shadow .18s ease, background-color .18s ease;
-  }
-  .project-row:hover, .project-row:focus-within {
-    transform: none;
-  }
+  .project-image, .project-row { transition: none; }
+  .project-image:hover { transform: none; box-shadow: none; }
 }
 </style>
