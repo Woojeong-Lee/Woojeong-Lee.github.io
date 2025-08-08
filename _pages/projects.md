@@ -102,31 +102,30 @@ filterSelection('all', document.querySelector('.filter-button'));
 
 <style>
 /* ========= Filters (Underline Tabs) ========= */
-/* ===== 필터 버튼 스타일 ===== */
-.project-filters {
+/.project-filters {
   text-align: center;
   margin-bottom: 1.25rem;
 }
 
 .filter-button {
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1rem;
   margin: 0 0.3rem;
-  background: #f3f4f6;       /* 연한 회색 배경 */
-  border: none;
-  border-radius: 9999px;     /* pill 모양 */
+  background: transparent;       /* 배경 없음 → 버튼 느낌 제거 */
+  border: none;                  /* 테두리 없음 */
   cursor: pointer;
   font-weight: 500;
   color: #111827;
-  transition: background 0.2s, color 0.2s;
+  transition: color 0.2s;
 }
 
 .filter-button:hover {
-  background: #e5e7eb;       /* hover 시 조금 진한 회색 */
+  color: #000;                   /* hover 시 글씨만 진하게 */
 }
 
 .filter-button.active {
-  background: #000;          /* 선택된 필터 → 검은색 배경 */
-  color: #fff;               /* 흰 글씨 */
+  color: #111827;
+  border: 2px solid #000;        /* 클릭된 상태 → 검은색 테두리 */
+  border-radius: 6px;
 }
 /* 포커스 접근성 */
 .filter-button:focus-visible{ outline:2px solid #2563eb; outline-offset:2px; }
