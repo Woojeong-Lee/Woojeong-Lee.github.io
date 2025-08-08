@@ -18,20 +18,16 @@ header:
 <div class="project-list">
   <details class="project-item social neuro">
     <summary>(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</summary>
-    <p>
-      How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA was used to identify brain regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then evaluated cross-condition generalization, testing whether classifiers trained on self-related judgments could decode president-related judgments.
-    </p>
     <figure class="project-figure">
       <img
         src="/assets/img/projects/SRE2_method.png"
-        alt="Analysis pipeline showing (1) Theory-of-Mind model RDM tested with searchlight RSA; (2) ROI-based MVPA testing cross-condition generalization between Self, Friend, and President conditions."
         loading="lazy"
         style="max-width:100%; border-radius:6px;"
-      >
-      <figcaption style="margin-top:.3rem; color:#666; font-size:0.9rem;">
-        Analysis pipeline — (1) Searchlight RSA tests a ToM model RDM. (2) ROI-based MVPA evaluates cross-condition generalization between Self, Friend, and President conditions.
-      </figcaption>
+        >
     </figure>
+    <p>
+      How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA was used to identify brain regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then evaluated cross-condition generalization, testing whether classifiers trained on self-related judgments could decode president-related judgments.
+    </p>
   </details>
 </div>
 
@@ -47,6 +43,13 @@ header:
 
   <details class="project-item social">
     <summary>The Influence of Situational Context and Observer Emotion on Ensemble Emotion Perception</summary>
+    <figure class="project-figure">
+      <img
+        src="/assets/img/projects/CEP_method.png"
+        loading="lazy"
+        style="max-width:100%; border-radius:6px;"
+        >
+    </figure>
     <p>Using naturalistic stimuli, the study investigated how situational context and observer emotion shape the perception of a crowd’s ensemble emotion.</p>
   </details>
 
