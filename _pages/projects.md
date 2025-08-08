@@ -30,30 +30,6 @@ header:
     </div>
   </section>
 
-  <!-- Plan 2 (no image → placeholder keeps left/right alignment) -->
-  <section class="project-row social neuro no-image">
-    <div class="project-image" aria-hidden="true"></div>
-    <div class="project-text">
-      <h2>(Plan 2) How Self–Other Distinction Shapes Empathy</h2>
-      <p>
-        Empathy requires a clear self–other distinction. We use multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias, and examine how rTPJ stimulation modulates each component to refine how self–other distinction contributes to empathic accuracy.
-      </p>
-    </div>
-  </section>
-
-  <!-- Plan 3 -->
-  <section class="project-row social">
-    <div class="project-image">
-      <img src="/assets/img/projects/placeholder-triangle.png" alt="Group Conformity Without Minds">
-    </div>
-    <div class="project-text">
-      <h2>(Plan 3) Group Conformity Without Minds</h2>
-      <p>
-        A reported conformity effect in visual perspective taking may reflect domain-general ensemble coding rather than social reasoning. We replicate the paradigm with non-social isosceles triangles to test this possibility.
-      </p>
-    </div>
-  </section>
-
   <!-- Ensemble Emotion Perception -->
   <section class="project-row social">
     <div class="project-image">
@@ -153,7 +129,7 @@ filterSelection('all', document.querySelector('.filter-button'));
 /* ========= Two-column layout: all items image-left / text-right ========= */
 .project-row {
   display: grid;
-  grid-template-columns: minmax(0, 58%) minmax(0, 42%);
+  grid-template-columns: minmax(0, 40%) minmax(0, 60%);
   align-items: stretch;
   gap: 2rem;
   padding: 1rem 0 2rem;
