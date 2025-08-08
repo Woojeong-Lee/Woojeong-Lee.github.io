@@ -145,9 +145,6 @@ filterSelection('all', document.querySelector('.filter-button'));
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f6f8fb; /* 이미지 비율 유지 시 생기는 여백 배경 */
-  border-radius: 8px;
-  padding: 0.5rem; /* 이미지가 너무 붙지 않게 */
 }
 .project-image img {
   width: 100%;
@@ -172,8 +169,7 @@ filterSelection('all', document.querySelector('.filter-button'));
 }
 .project-text h2 {
   margin: 0 0 .5rem;
-  /* 요청: 제목 더 작게 */
-  font-size: clamp(1.1rem, 0.7vw + 1rem, 1.6rem);
+  font-size: clamp(1rem, 0.6vw + 0.9rem, 1.4rem);
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: #111827;
