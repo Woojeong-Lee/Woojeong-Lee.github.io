@@ -51,9 +51,7 @@ header:
     <div class="project-text">
       <h2>Self-Prioritization Effects on Nonspatial Working Memory</h2>
       <p>
-        The self-prioritization effect (SPE) refers to faster and more accurate processing of self-associated information, but its impact on working memory (WM) is unclear. This study examined SPE in nonspatial WM across two experiments(<a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>, <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>) using shape–color associations. While shape memory showed no self-advantage, responses to self-associated colors were consistently faster, suggesting that in nonspatial WM, SPE may be limited to self-associated features rather than whole objects.
-        <a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>,
-        <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>.
+        The self-prioritization effect (SPE) refers to faster and more accurate processing of self-associated information, but its impact on working memory (WM) is unclear. This study examined SPE in nonspatial WM across two experiments(<a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">Experiment 1</a>, <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">Experiment 2</a>) using shape–color associations. While shape memory showed no self-advantage, responses to self-associated colors were consistently faster, suggesting that in nonspatial WM, SPE may be limited to self-associated features rather than whole objects.
       </p>
     </div>
   </section>
