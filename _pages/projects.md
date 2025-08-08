@@ -14,16 +14,34 @@ header:
   <button class="filter-button" onclick="filterSelection('neuro', this)">Neuro</button>
 </div>
 
-<!-- Project List -->
+
 <div class="project-list">
+  <details class="project-item social neuro">
+    <summary>(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</summary>
+    <p>
+      How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA was used to identify brain regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then evaluated cross-condition generalization, testing whether classifiers trained on self-related judgments could decode president-related judgments.
+    </p>
+    <figure class="project-figure">
+      <img
+        src="/assets/img/projects/SRE2_method.png"
+        alt="Analysis pipeline showing (1) Theory-of-Mind model RDM tested with searchlight RSA; (2) ROI-based MVPA testing cross-condition generalization between Self, Friend, and President conditions."
+        loading="lazy"
+        style="max-width:100%; border-radius:6px;"
+      >
+      <figcaption style="margin-top:.3rem; color:#666; font-size:0.9rem;">
+        Analysis pipeline — (1) Searchlight RSA tests a ToM model RDM. (2) ROI-based MVPA evaluates cross-condition generalization between Self, Friend, and President conditions.
+      </figcaption>
+    </figure>
+  </details>
+</div>
 
   <details class="project-item social neuro">
-    <summary>How Self–Other Distinction Shapes Empathy</summary>
-    <p>Empathy—the ability to understand and share others’ emotions—is essential for social interaction. While often associated with emotional resonance, effective empathy also requires a clear self–other distinction. The right temporoparietal junction (rTPJ), a region implicated in this distinction, has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process, overlooking its complex structure. Contemporary theories of pain empathy differentiate between automatic, bottom-up simulation and controlled, top-down regulation depending on context. These distinct components may rely on separable neural mechanisms. To address this, we apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, providing a more nuanced understanding of how self–other distinction contributes to empathic accuracy.</p>
+    <summary>(Plan 2)How Self–Other Distinction Shapes Empathy</summary>
+    <p>Empathy—the ability to understand and share others’ emotions—is essential for social interaction. Effective empathy requires a clear self–other distinction. The right temporoparietal junction (rTPJ), a region implicated in this distinction, has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process, overlooking its complex structure. Contemporary theories of pain empathy differentiate between automatic, bottom-up simulation and controlled, top-down regulation depending on context. These distinct components may rely on separable neural mechanisms. To address this, we apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, providing a more nuanced understanding of how self–other distinction contributes to empathic accuracy.</p>
   </details>
 
   <details class="project-item social">
-    <summary>Group Conformity Without Minds</summary>
+    <summary>(Plan 3)Group Conformity Without Minds</summary>
     <p>Sun, Wang, and Geng (2024) reported a group conformity effect in visual perspective taking, observing that participants' judgments of a target avatar’s viewpoint were biased toward the average viewpoint of surrounding avatars. This interpretation relies on the assumption that participants adopt the avatar’s perspective. However, such bias may alternatively arise from domain-general mechanisms, such as ensemble coding of directional information, without necessarily invoking social reasoning. To test this possibility, the present study replicates the original paradigm using non-social stimuli—specifically, replacing avatars with isosceles triangles.</p>
   </details>
 
