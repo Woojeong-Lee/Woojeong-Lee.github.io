@@ -37,14 +37,6 @@ header:
 
   <!-- Card 2 -->
   <article class="project-card social neuro">
-    <figure class="project-figure">
-      <img
-        src="/assets/img/projects/placeholder_neuro.png"
-        loading="lazy"
-        alt="Self–Other distinction and empathy"
-        onerror="this.src='/assets/img/projects/CEP_method.png'"
-      >
-    </figure>
     <h3 class="project-title">(Plan 2) How Self–Other Distinction Shapes Empathy</h3>
     <p class="project-text">
       Empathy—the ability to understand and share others’ emotions—is essential for social interaction. Effective empathy requires a clear self–other distinction. The right temporoparietal junction (rTPJ), a region implicated in this distinction, has been shown to modulate empathic responses. However, prior work tends to treat empathy as a unitary process, overlooking its complex structure. Contemporary theories of pain empathy differentiate between automatic, bottom-up simulation and controlled, top-down regulation depending on context. These distinct components may rely on separable neural mechanisms. To address this, we apply multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, providing a more nuanced understanding of how self–other distinction contributes to empathic accuracy.
