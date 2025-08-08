@@ -66,7 +66,7 @@ header:
     <div class="project-text">
       <h2>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h2>
       <p>
-        We test whether meaningful objects facilitate encoding of spatially distal features in visual working memory.
+        The study examined whether meaningful objects facilitate encoding of spatially distal features in visual working memory.
       </p>
     </div>
   </section>
@@ -77,7 +77,7 @@ header:
     <div class="project-text">
       <h2>The Influence of Speaker Gender and Age on Product Preference</h2>
       <p>
-        How do speaker gender and age shape product evaluations and purchase decisions? We test this using naturalistic video stimuli and fNIRS.
+        How do speaker gender and age shape product evaluations and purchase decisions? The study explored this using naturalistic video stimuli and fNIRS.
       </p>
     </div>
   </section>
