@@ -143,7 +143,7 @@ filterSelection('all', document.querySelector('.filter-button'));
 
 /* 구분선으로 프로젝트 간 분리 */
 .project-row + .project-row {
-  border-top: 1px solid #e9edf3;
+  border-top: 2px solid #e9edf3;
 }
 
 /* 이미지 영역 */
@@ -204,7 +204,7 @@ filterSelection('all', document.querySelector('.filter-button'));
 
 /* ========= Responsive ========= */
 @media (max-width: 960px) {
-  .projects { margin-left: 0; margin-right: 0; width: 100%; padding: 0 .75rem; }
+  .projects { margin-left: 0; margin-right: 0; width: 100%; padding: 3rem; }
   .project-row { grid-template-columns: 1fr; gap: 1.25rem; }
   .project-image img,
   .project-row.no-image .project-image { min-height: 240px; }
