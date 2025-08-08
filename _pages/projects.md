@@ -38,7 +38,7 @@ header:
     <div class="project-text">
       <h2>Contextual Effects on Ensemble Emotion Perception</h2>
       <p>
-    People can rapidly judge the average emotion of multiple faces—an ability known as ensemble perception. However, in everyday life, the context also shapes how we read a crowd’s mood. The same excited group might feel very different at a protest versus a concert. This study examined whether context changes ensemble emotion perception using naturalistic stimuli combining human figures with emotional backgrounds. Two experiments revealed that both facial and background valence significantly influenced participants’ judgments, demonstrating that context modulates ensemble emotion perception.
+    People can rapidly judge the average emotion of multiple faces—an ability known as ensemble perception. However, in everyday life, the context also shapes how we read a crowd’s mood. The same excited group may be perceived differently at a protest versus a concert. Using naturalistic stimuli combining human figures with emotional backgrounds, this study tested how context affects ensemble emotion perception. Two experiments revealed that both facial and background valence significantly influenced participants’ judgments, demonstrating that context modulates ensemble emotion perception.
       </p>
     </div>
   </section>
@@ -51,7 +51,7 @@ header:
     <div class="project-text">
       <h2>Self-Prioritization Effects on Nonspatial Working Memory</h2>
       <p>
-      The self-prioritization effect (SPE) refers to faster and more accurate processing of self-associated information. However, prior findings on its role in working memory (WM) have been inconsistent. This study tested SPE in nonspatial WM across two experiments (<a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">Experiment 1</a>, <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">Experiment 2</a>). Participants associated themselves and another person with specific colors. WM for shapes indirectly linked to the self showed no benefit, whereas directly self-associated colors were remembered faster—suggesting that SPE in nonspatial WM may be limited to directly linked features rather than whole objects.
+      The self-prioritization effect (SPE) refers to faster and more accurate processing of self-associated information. However, prior findings on its role in working memory (WM) have been inconsistent. This study tested SPE in nonspatial WM across two experiments (<a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">Experiment 1</a>, <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">Experiment 2</a>). Participants associated themselves and another person with specific colors. WM for shapes indirectly linked to the self showed no benefit, whereas directly self-associated colors were remembered faster, indicating that SPE in nonspatial WM may be limited to directly linked features rather than whole objects.
       </p>
     </div>
   </section>
