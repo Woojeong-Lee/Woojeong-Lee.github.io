@@ -167,6 +167,13 @@ filterSelection('all', document.querySelector('.filter-button'));
   background: linear-gradient(180deg, #f6f8fb 0%, #eef2f8 100%);
   border: 1px dashed #d7deea;
 }
+.project-row.no-image .project-image::before {
+  content: "Coming Soon";
+  font-size: 1.2rem;
+  color: #777;
+  font-weight: 500;
+  font-style: italic;
+}
 
 /* 텍스트 */
 .project-text {
