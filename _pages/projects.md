@@ -127,67 +127,74 @@ filterSelection('all', document.querySelector('.filter-button'));
 .page .page__inner-wrap { padding-left: 0; padding-right: 0; }
 
 /* ========= Two-column layout: all items image-left / text-right ========= */
-.project-row {
-  display: grid;
-  grid-template-columns: minmax(0, 40%) minmax(0, 60%);
-  align-items: stretch;
-  gap: 2rem;
-  padding: 1rem 0 2rem;
+/* 1) 레이아웃 정리: 위쪽 정렬 + 칼럼 비율 고정 */
+.project-row{
+  display:grid;
+  grid-template-columns:minmax(0,39%) minmax(0,61%);
+  align-items:start;            /* ⬅ 가운데가 아니라 위쪽 정렬 */
+  gap:1.75rem;
+  padding:1.25rem 0 2rem;
+}
+.project-row + .project-row{ border-top:1px solid #e9edf3; }
+
+/* 2) 이미지: 비율 유지(contain) + 최대 높이 통일 */
+.project-image{ display:flex; align-items:flex-start; justify-content:center; }
+.project-image img{
+  width:100%;
+  height:auto;                  /* 원본 비율 유지 */
+  object-fit:contain;           /* 잘림 없음 */
+  max-height:420px;             /* ⬅ 데스크톱 기준 통일 높이(원하면 360~480 조절) */
+  border-radius:6px;
 }
 
-/* 구분선으로 프로젝트 간 분리 */
-.project-row + .project-row {
-  border-top: 1px solid #e9edf3;
+/* 3) 타이포: 제목 살짝 더 작고 가볍게, 본문 줄길이 제한 */
+.project-text{ display:flex; flex-direction:column; justify-content:flex-start; }
+.project-text h2{
+  margin:0 0 .4rem;
+  font-weight:600;              /* 700 -> 600 */
+  font-size:clamp(1rem, 0.55vw + 0.95rem, 1.28rem);  /* 살짝 축소 */
+  line-height:1.25;
+  letter-spacing:-0.01em;
+  color:#0f172a;
+}
+.project-text p{
+  margin:0;
+  max-width:60ch;               /* ⬅ 가독성 핵심 */
+  line-height:1.85;
+  font-size:clamp(.98rem, 0.35vw + .9rem, 1.08rem);
+  color:#374151;
 }
 
-/* 이미지 영역 */
-.project-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* 4) 필터 바 살짝 업그레이드 + 상단 고정(옵션) */
+.project-filters{
+  position:sticky; top:64px; z-index:10; /* 네비바 높이에 맞춰 조절 */
+  backdrop-filter:saturate(120%) blur(6px);
+  background:rgba(255,255,255,.75);
+  padding:.5rem .25rem 1rem;
+  margin:0 0 .5rem;
+  border-bottom:1px solid #eef2f7;
 }
-.project-image img {
-  width: 100%;
-  height: auto; /* 원본 비율 유지 */
-  max-height: 100%; /* 너무 커지지 않게 */
-  object-fit: contain; /* 잘리지 않고 축소/확대 */
-  border-radius: 6px;
+.filter-button{
+  padding:.45rem .9rem; margin:0 .3rem;
+  border-radius:999px;          /* pill 형태 */
+  background:#f1f5f9;
+}
+.filter-button.active{ background:#0a66c2; color:#fff; }
+
+/* 5) 모바일 */
+@media (max-width: 960px){
+  .project-row{ grid-template-columns:1fr; gap:1rem; }
+  .project-image img{ max-height:280px; }
+  .project-text p{ max-width:65ch; }      /* 모바일에선 조금 풀어줌 */
 }
 
-/* 이미지가 없는 항목: 플레이스홀더 패널 유지(정렬 통일) */
-.project-row.no-image .project-image {
-  min-height: 320px;
-  background: linear-gradient(180deg, #f6f8fb 0%, #eef2f8 100%);
-  border: 1px dashed #d7deea;
-}
-
-/* 텍스트 */
-.project-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.project-text h2 {
-  margin: 0 0 .5rem;
-  font-size: clamp(1rem, 0.6vw + 0.9rem, 1.4rem);
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-  color: #111827;
-}
-.project-text p {
-  margin: 0;
-  font-size: clamp(0.98rem, 0.35vw + 0.9rem, 1.08rem);
-  line-height: 1.85;
-  color: #374151;
-}
-.project-link { color: #0a6cff; text-decoration: none; }
-.project-link:hover { text-decoration: underline; }
-
-/* ========= Responsive ========= */
-@media (max-width: 960px) {
-  .projects { margin-left: 0; margin-right: 0; width: 100%; padding: 0 .75rem; }
-  .project-row { grid-template-columns: 1fr; gap: 1.25rem; }
-  .project-image img,
-  .project-row.no-image .project-image { min-height: 240px; }
+/* 6) 다크모드(선택) */
+@media (prefers-color-scheme: dark){
+  .project-row + .project-row{ border-top:1px solid #2a2f3a; }
+  .project-text h2{ color:#e5e7eb; }
+  .project-text p{ color:#cbd5e1; }
+  .filter-button{ background:#1f2937; color:#e5e7eb; }
+  .filter-button.active{ background:#2563eb; color:#fff; }
+  .project-filters{ background:rgba(17,24,39,.75); border-bottom-color:#111827; }
 }
 </style>
