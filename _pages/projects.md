@@ -23,33 +23,9 @@ header:
       <img src="/assets/img/projects/SRE2_method1.png" alt="Plan 1 image">
     </div>
     <div class="project-text">
-      <h2>(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</h2>
+      <h2>Neural Mechanisms of Simulating Others’ Thoughts</h2>
       <p>
         How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA identified regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then tested cross-condition generalization to see whether classifiers trained on self-related judgments decode president-related judgments.
-      </p>
-    </div>
-  </section>
-
-  <!-- Plan 2 (no image → placeholder keeps left/right alignment) -->
-  <section class="project-row social neuro no-image">
-    <div class="project-image" aria-hidden="true"></div>
-    <div class="project-text">
-      <h2>(Plan 2) How Self–Other Distinction Shapes Empathy</h2>
-      <p>
-        Empathy requires a clear self–other distinction. We use multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias, and examine how rTPJ stimulation modulates each component to refine how self–other distinction contributes to empathic accuracy.
-      </p>
-    </div>
-  </section>
-
-  <!-- Plan 3 -->
-  <section class="project-row social">
-    <div class="project-image">
-      <img src="/assets/img/projects/placeholder-triangle.png" alt="Group Conformity Without Minds">
-    </div>
-    <div class="project-text">
-      <h2>(Plan 3) Group Conformity Without Minds</h2>
-      <p>
-        A reported conformity effect in visual perspective taking may reflect domain-general ensemble coding rather than social reasoning. We replicate the paradigm with non-social isosceles triangles to test this possibility.
       </p>
     </div>
   </section>
@@ -83,9 +59,10 @@ header:
     </div>
   </section>
 
-  <!-- Meaningfulness in VWM (no image) -->
+  <!-- Meaningfulness in VWM -->
   <section class="project-row memory no-image">
-    <div class="project-image" aria-hidden="true"></div>
+      <img src="/assets/img/projects/Meaningfulness_method.png" alt="Self-Prioritization Effects">
+    </div>
     <div class="project-text">
       <h2>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h2>
       <p>
@@ -153,10 +130,14 @@ filterSelection('all', document.querySelector('.filter-button'));
 /* ========= Two-column layout: all items image-left / text-right ========= */
 .project-row {
   display: grid;
-  grid-template-columns: minmax(0, 58%) minmax(0, 42%);
+  grid-template-columns: minmax(0, 40%) minmax(0, 60%);
   align-items: stretch;
   gap: 2rem;
   padding: 1rem 0 2rem;
+
+  /* 구분감 + 부드러운 인터랙션 */
+  border-radius: 8px;
+  transition: box-shadow .18s ease, transform .18s ease, background-color .18s ease;
 }
 
 /* 구분선으로 프로젝트 간 분리 */
@@ -170,7 +151,6 @@ filterSelection('all', document.querySelector('.filter-button'));
   align-items: center;
   justify-content: center;
 }
-
 .project-image img {
   width: 100%;
   height: auto;        /* 원본 비율 유지 */
@@ -180,6 +160,7 @@ filterSelection('all', document.querySelector('.filter-button'));
 }
 
 /* 이미지가 없는 항목: 플레이스홀더 패널 유지(정렬 통일) */
+/* (원치 않으면 이 블록만 삭제하면 됨) */
 .project-row.no-image .project-image {
   min-height: 320px;
   background: linear-gradient(180deg, #f6f8fb 0%, #eef2f8 100%);
@@ -208,44 +189,24 @@ filterSelection('all', document.querySelector('.filter-button'));
 .project-link { color: #0a6cff; text-decoration: none; }
 .project-link:hover { text-decoration: underline; }
 
-/* ========= Responsive ========= */
-@media (max-width: 960px) {
-  .projects { margin-left: 0; margin-right: 0; width: 100%; padding: 0 .75rem; }
-  .project-row { grid-template-columns: 1fr; gap: 1.25rem; }
-  .project-image img,
-  .project-row.no-image .project-image { min-height: 240px; }
-}
-
-/* --- 프로젝트 간 구분감을 위한 가벼운 인터랙션만 추가 --- */
-
-/* 부드러운 애니메이션과 모서리 라운드 */
-.project-row {
-  border-radius: 8px; /* 시각적 분리감 */
-  transition: box-shadow .18s ease, transform .18s ease, background-color .18s ease;
-}
-
-/* 호버 시: 커서 바꾸고 살짝 그림자만 */
+/* ========= Hover/Focus 인터랙션 (커서+그림자만) ========= */
 .project-row:hover {
-  cursor: pointer; /* 화살표 → 손모양 */
+  cursor: pointer;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transform: translateY(-2px);
-  background-color: #fafbfc; /* 아주 옅은 배경 변화 (거의 안 보일 정도) */
 }
-
-/* 키보드 탐색 시(접근성): 내부 링크에 포커스 들어오면 같은 효과 */
 .project-row:focus-within {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transform: translateY(-2px);
   background-color: #fafbfc;
 }
 
-/* 내부 실제 링크는 원래 색 유지 + 호버 시 밑줄만 */
-.project-text a {
-  color: inherit;
-  text-decoration: none;
-}
-.project-text a:hover, .project-text a:focus {
-  text-decoration: underline;
+/* ========= Responsive ========= */
+@media (max-width: 960px) {
+  .projects { margin-left: 0; margin-right: 0; width: 100%; padding: 0 .75rem; }
+  .project-row { grid-template-columns: 1fr; gap: 1.25rem; }
+  .project-image img,
+  .project-row.no-image .project-image { min-height: 240px; }
 }
 
 /* 모션 민감 사용자 배려 */
