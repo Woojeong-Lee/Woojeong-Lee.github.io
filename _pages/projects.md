@@ -6,217 +6,142 @@ header:
   show_title: false
 ---
 
-<!-- ====== Filters ====== -->
-<div class="project-filters">
+<!-- 필터 버튼 -->
+<div class="project-filters" style="text-align:center; margin-bottom: 2rem;">
   <button class="filter-button active" onclick="filterSelection('all', this)">All</button>
   <button class="filter-button" onclick="filterSelection('social', this)">Social</button>
   <button class="filter-button" onclick="filterSelection('memory', this)">Memory</button>
   <button class="filter-button" onclick="filterSelection('neuro', this)">Neuro</button>
 </div>
 
-<!-- ====== OUTER (full-bleed escape) + INNER (max width with small gutters) ====== -->
-<div class="projects-outer">
-  <div class="projects">
+<!-- 프로젝트 리스트 -->
+<div class="projects">
 
-    <!-- Plan 1 -->
-    <section class="project-row social neuro"
-      data-href="/projects/sre2" role="link" tabindex="0">
-      <div class="project-image">
+  <!-- Plan 1 -->
+  <section class="project-row social neuro">
+    <div class="project-image">
+      <a href="/projects/plan1">
         <img src="/assets/img/projects/SRE2_method1.png" alt="Plan 1 image">
-      </div>
-      <div class="project-text">
-        <h2>(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</h2>
-        <p>
-          How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA identified regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then tested cross-condition generalization to see whether classifiers trained on self-related judgments decode president-related judgments.
-        </p>
-      </div>
-    </section>
+      </a>
+    </div>
+    <div class="project-text">
+      <h2><a href="/projects/plan1">(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</a></h2>
+      <p>
+        How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA identified regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then tested cross-condition generalization to see whether classifiers trained on self-related judgments decode president-related judgments.
+      </p>
+    </div>
+  </section>
 
-    <!-- Ensemble Emotion Perception -->
-    <section class="project-row social"
-      data-href="/projects/cep" role="link" tabindex="0">
-      <div class="project-image">
-        <img src="/assets/img/projects/CEP_method.png" alt="Ensemble Emotion Perception">
-      </div>
-      <div class="project-text">
-        <h2>The Influence of Situational Context and Observer Emotion on Ensemble Emotion Perception</h2>
-        <p>
-          Using naturalistic stimuli, we examine how situational context and observer emotion shape perceptions of a crowd’s ensemble emotion.
-        </p>
-      </div>
-    </section>
+  <!-- Plan 2 -->
+  <section class="project-row social neuro">
+    <div class="project-image">
+      <!-- 이미지 없으면 비워둬도 됨 -->
+    </div>
+    <div class="project-text">
+      <h2><a href="/projects/plan2">(Plan 2) How Self–Other Distinction Shapes Empathy</a></h2>
+      <p>
+        We use multinomial processing tree (MPT) modeling to dissociate intentional empathy, unintentional empathy, and response bias. We then examine how rTPJ stimulation modulates each component, refining how self–other distinction contributes to empathic accuracy.
+      </p>
+    </div>
+  </section>
 
-    <!-- SPE -->
-    <section class="project-row social memory"
-      data-href="/projects/spe8vcs" role="link" tabindex="0">
-      <div class="project-image">
-        <img src="/assets/img/projects/SPE_method.png" alt="Self-Prioritization Effects">
-      </div>
-      <div class="project-text">
-        <h2>Self-Prioritization Effects on Nonspatial Working Memory</h2>
-        <p>
-          We tested SPE on shape-based WM across two experiments:
-          <a href="/data/analyzeSPE8VCS1.html" target="_blank">Experiment 1</a>,
-          <a href="/data/analyzeSPE8VCS2.html" target="_blank">Experiment 2</a>.
-          WM responses for colors were faster in the self condition than the other; no shape differences emerged.
-        </p>
-      </div>
-    </section>
+  <!-- Plan 3 -->
+  <section class="project-row social">
+    <div class="project-image">
+      <a href="/projects/plan3">
+        <img src="/assets/img/projects/triangle.png" alt="Plan 3 image">
+      </a>
+    </div>
+    <div class="project-text">
+      <h2><a href="/projects/plan3">(Plan 3) Group Conformity Without Minds</a></h2>
+      <p>
+        This study replicates the original group conformity paradigm in visual perspective taking, replacing avatars with non-social stimuli (isosceles triangles) to test whether effects arise from domain-general mechanisms like ensemble coding.
+      </p>
+    </div>
+  </section>
 
-    <!-- Meaningfulness in VWM (text only) -->
-    <section class="project-row memory no-image"
-      data-href="/projects/meningfulness" role="link" tabindex="0">
-      <div class="project-image" aria-hidden="true"></div>
-        <img src="/assets/img/projects/Meanigfulness_method.png" alt="Meaningfulness Effects">
-      </div>
-      <div class="project-text">
-        <h2>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h2>
-        <p>
-          We test whether meaningful objects facilitate encoding of spatially distal features in visual working memory.
-        </p>
-      </div>
-    </section>
-
-    <!-- fNIRS -->
-    <section class="project-row neuro no-image"
-      data-href="/projects/voiceeffect" role="link" tabindex="0">
-      <div class="project-image" aria-hidden="true"></div>
-      <div class="project-text">
-        <h2>The Influence of Speaker Gender and Age on Product Preference</h2>
-        <p>
-          How do speaker gender and age shape product evaluations and purchase decisions? We test this using naturalistic video stimuli and fNIRS.
-        </p>
-      </div>
-    </section>
-
-  </div>
 </div>
 
-<!-- ====== JS: row links + filters ====== -->
+<!-- JS -->
 <script>
-function enableRowLinks(){
-  document.querySelectorAll('.project-row[data-href]').forEach(row => {
-    const go = () => window.location.href = row.dataset.href;
-    row.addEventListener('click', e => {
-      if (e.target.closest('a')) return; // 내부 앵커는 그대로 작동
-      go();
-    });
-    row.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
-    });
-    row.style.cursor = 'pointer';
+function filterSelection(category, el) {
+  const items = document.querySelectorAll('.project-row');
+  items.forEach(item => {
+    item.style.display = (category === 'all' || item.classList.contains(category)) ? 'grid' : 'none';
   });
+  document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+  el.classList.add('active');
 }
-
-function filterSelection(category, btn) {
-  const rows = document.querySelectorAll('.project-row');
-  rows.forEach(row => {
-    const show = (category === 'all') || row.classList.contains(category);
-    row.style.display = show ? '' : 'none';
-  });
-  document.querySelectorAll('.filter-button').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  enableRowLinks();
-  filterSelection('all', document.querySelector('.filter-button'));
-});
 </script>
 
+<!-- CSS -->
 <style>
-/* ========= Filters ========= */
-.project-filters{
-  text-align:center;
-  margin:.25rem 0 1rem;
+/* 필터 버튼 - 원래 스타일 */
+.filter-button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
 }
-.filter-button{
-  padding:.45rem .9rem;
-  margin:0 .3rem;
-  background:#f1f5f9;
-  border:0;
-  border-radius:999px;
-  cursor:pointer;
-  font-weight:500;
-  transition:background .2s;
-}
-.filter-button:hover{ background:#e6edf5; }
-.filter-button.active{ background:#0a66c2; color:#fff; }
-
-/* ========= Full-bleed escape (outer), centered inner with small gutters ========= */
-.projects-outer{
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  margin-right:calc(50% - 50vw);
-}
-.projects{
-  width:100%;
-  max-width:1400px;   /* 전체 최대 폭 */
-  margin:0 auto;      /* 가운데 정렬 */
-  padding:0 2rem;     /* 양 끝에 '조금' 여백 */
+.filter-button:hover { background: #e0e0e0; }
+.filter-button.active {
+  background: #007acc;
+  color: white;
 }
 
-/* ========= Grid: 이미지 39% / 텍스트 61%, 위쪽 정렬 ========= */
-.project-row{
-  display:grid;
-  grid-template-columns:minmax(0,39%) minmax(0,61%);
-  align-items:start;
-  gap:1.75rem;
-  padding:1.25rem 0 2rem;
-  transition:background-color .18s ease;
-}
-.project-row + .project-row{ border-top:1px solid #e9edf3; }
-.project-row:hover{ background:#f9fafb; }
-
-/* ========= 이미지: 비율 유지(잘림 없음) ========= */
-.project-image{ display:flex; align-items:flex-start; justify-content:center; }
-.project-image img{
-  width:100%;
-  height:auto;          /* 원본 비율 유지 */
-  object-fit:contain;   /* 잘리지 않게 */
-  max-height:420px;     /* 통일된 최대 높이 (필요시 360~480으로 조절) */
-  border-radius:6px;
+/* 전체 컨테이너 - 여백 줄임 */
+.projects {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem; /* 좌우 여백 최소화 */
 }
 
-/* ========= 텍스트 ========= */
-.project-text{ display:flex; flex-direction:column; justify-content:flex-start; }
-.project-text h2{
-  margin:0 0 .4rem;
-  font-weight:600;
-  font-size:clamp(1rem, 0.55vw + 0.95rem, 1.28rem); /* 제목 살짝 작게 */
-  line-height:1.25;
-  letter-spacing:-0.01em;
-  color:#0f172a;
+/* 프로젝트 행 */
+.project-row {
+  display: grid;
+  grid-template-columns: 39% 61%; /* 이미지:글 비율 */
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e9edf3;
+  align-items: start;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.project-text p{
-  margin:0;
-  max-width:60ch;       /* 가독성 좋은 줄길이 */
-  line-height:1.85;
-  font-size:clamp(.98rem, 0.35vw + .9rem, 1.08rem);
-  color:#374151;
-}
-.project-text a{ color:#0a6cff; text-decoration:underline; }
-
-/* ========= 이미지 없는 항목도 레이아웃 유지 ========= */
-.project-row.no-image .project-image{
-  min-height:180px;     /* 너무 납작해지지 않도록만 */
+.project-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* ========= 모바일 ========= */
-@media (max-width: 960px){
-  .projects{ padding:0 1rem; }
-  .project-row{ grid-template-columns:1fr; gap:1rem; }
-  .project-image img{ max-height:280px; }
-  .project-text p{ max-width:65ch; }
+/* 이미지 */
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
-/* ========= (선택) 다크 모드 대비 ========= */
-@media (prefers-color-scheme: dark){
-  .project-row + .project-row{ border-top:1px solid #2a2f3a; }
-  .project-row:hover{ background:#161a22; }
-  .project-text h2{ color:#e5e7eb; }
-  .project-text p{ color:#cbd5e1; }
-  .filter-button{ background:#1f2937; color:#e5e7eb; }
-  .filter-button.active{ background:#2563eb; color:#fff; }
+/* 텍스트 */
+.project-text h2 {
+  margin: 0 0 .4rem;
+  font-weight: 600;
+  font-size: clamp(1rem, 0.55vw + 0.95rem, 1.2rem); /* 제목 조금 줄임 */
+  line-height: 1.25;
+}
+.project-text a {
+  text-decoration: none;
+  color: inherit; /* hover 시 색상 안 바뀜 */
+}
+.project-text a:hover {
+  text-decoration: underline;
+}
+.project-text p {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
 }
 </style>
