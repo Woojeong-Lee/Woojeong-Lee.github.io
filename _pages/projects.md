@@ -25,7 +25,7 @@ header:
     <div class="project-text">
       <h2>Neural Mechanisms of Simulating Others' Mind</h2>
       <p>
-        How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA identified regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then tested cross-condition generalization to see whether classifiers trained on self-related judgments decode president-related judgments.
+        How does the brain represent another person’s thoughts? Participants made judgments about themselves and the president, from both their own perspective and that of a close friend. Whole-brain searchlight RSA identified brain regions whose activity patterns reflected the friend’s perspective. ROI-based MVPA then tested cross-condition generalization, examining whether classifiers trained on self-related judgments could also decode president-related judgments.
       </p>
     </div>
   </section>
@@ -38,7 +38,7 @@ header:
     <div class="project-text">
       <h2>Contextual Effects on Ensemble Emotion Perception</h2>
       <p>
-        Using naturalistic stimuli, we examine how situational context and observer emotion shape perceptions of a crowd’s ensemble emotion.
+        People can rapidly judge the average emotion of multiple faces—an ability known as ensemble perception. However, in real-life situations, context also plays a critical role in interpreting the mood of a crowd. For instance, the same group of excited individuals might be perceived differently depending on whether they are at a protest or a concert. To examine whether such judgments vary with situational context, this study used naturalistic stimuli that combined human figures from real-life images with positive, neutral, or negative backgrounds. Facial emotional valence was quantified using DeepFace, and participants rated the average emotion on a −100 to +100 scale. Results from two experiments showed that both facial and background valence significantly influenced ratings, indicating that context can meaningfully modulate ensemble emotion perception.
       </p>
     </div>
   </section>
@@ -51,10 +51,9 @@ header:
     <div class="project-text">
       <h2>Self-Prioritization Effects on Nonspatial Working Memory</h2>
       <p>
-        We tested SPE on shape-based WM across two experiments:
+        The self-prioritization effect (SPE) refers to faster and more accurate processing of self-associated information, but its impact on working memory (WM) is unclear. We examined SPE in nonspatial WM across two experiments(<a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>, <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>) using shape–color associations. While shape memory showed no self-advantage, responses to self-associated colors were consistently faster, suggesting that in nonspatial WM, SPE may be limited to self-associated features rather than whole objects.
         <a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>,
         <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>.
-        WM responses for colors were faster in the self condition than the other; no shape differences emerged.
       </p>
     </div>
   </section>
