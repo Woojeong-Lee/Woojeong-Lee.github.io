@@ -60,7 +60,7 @@ header:
   </section>
 
   <!-- Meaningfulness in VWM -->
-  <section class="project-row memory no-image">
+  <section class="project-row memory">
     <div class="project-image">
       <img src="/assets/img/projects/Meaningfulness_method.png" alt="Meaningfulness Effects">
     </div>
@@ -164,7 +164,7 @@ filterSelection('all', document.querySelector('.filter-button'));
 /* 이미지 없는 항목: "Coming Soon" 한 번만 중앙에 표시 */
 .project-row.no-image .project-image {
   position: relative;              /* ::before를 절대배치로 중앙 정렬하기 위함 */
-  min-height: 240px;               /* 필요시 높이 조절 (320px → 240px로 예시) */
+  min-height: 320px;             
   border: 1px dashed #d7deea;      /* 원하면 지워도 됨 */
   background: #f8fafc;             /* 원하면 지워도 됨 */
   display: block;                  /* flex 참여 이슈 방지 */
