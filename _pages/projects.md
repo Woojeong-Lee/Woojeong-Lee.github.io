@@ -23,7 +23,7 @@ header:
       <img src="/assets/img/projects/SRE2_method1.png" alt="Plan 1 image">
     </div>
     <div class="project-text">
-      <h2>(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</h2>
+      <h2>Neural Mechanisms of Simulating Others’ Mind</h2>
       <p>
         How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA identified regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then tested cross-condition generalization to see whether classifiers trained on self-related judgments decode president-related judgments.
       </p>
