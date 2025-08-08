@@ -62,7 +62,7 @@ header:
   <!-- Meaningfulness in VWM -->
   <section class="project-row memory no-image">
     <div class="project-image">
-      <img src="/assets/img/projects/Meaningfulness_method.png" alt="Self-Prioritization Effects">
+      <img src="/assets/img/projects/Meaningfulness_method.png" alt="Meaningfulness Effects">
     </div>
     <div class="project-text">
       <h2>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h2>
@@ -134,7 +134,7 @@ filterSelection('all', document.querySelector('.filter-button'));
   grid-template-columns: minmax(0, 40%) minmax(0, 60%);
   align-items: stretch;
   gap: 2rem;
-  padding: 2rem 2 2rem;
+  padding: 2rem 3 2rem;
 
   /* 구분감 + 부드러운 인터랙션 */
   border-radius: 8px;
@@ -161,7 +161,6 @@ filterSelection('all', document.querySelector('.filter-button'));
 }
 
 /* 이미지가 없는 항목: 플레이스홀더 패널 유지(정렬 통일) */
-/* (원치 않으면 이 블록만 삭제하면 됨) */
 .project-row.no-image .project-image {
   min-height: 320px;
   background: linear-gradient(180deg, #f6f8fb 0%, #eef2f8 100%);
@@ -207,10 +206,8 @@ filterSelection('all', document.querySelector('.filter-button'));
 /* 제목 호버 */
 .project-text h2:hover {
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
+  text-decoration: underline;
 }
-
 
 /* ========= Responsive ========= */
 @media (max-width: 960px) {
