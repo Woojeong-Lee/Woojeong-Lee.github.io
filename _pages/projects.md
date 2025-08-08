@@ -142,18 +142,19 @@ filterSelection('all', document.querySelector('.filter-button'));
 
 /* 이미지 영역 */
 .project-image {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f8fb; /* 이미지 비율 유지 시 생기는 여백 배경 */
   border-radius: 8px;
-  background: #f6f8fb;
+  padding: 0.5rem; /* 이미지가 너무 붙지 않게 */
 }
 .project-image img {
-  display: block;
   width: 100%;
-  height: 100%;
-  min-height: 420px;   /* 더 크게 보이고 싶으면 520~640px */
-  object-fit: cover;
-  border-radius: 8px;
+  height: auto; /* 원본 비율 유지 */
+  max-height: 100%; /* 너무 커지지 않게 */
+  object-fit: contain; /* 잘리지 않고 축소/확대 */
+  border-radius: 6px;
 }
 
 /* 이미지가 없는 항목: 플레이스홀더 패널 유지(정렬 통일) */
