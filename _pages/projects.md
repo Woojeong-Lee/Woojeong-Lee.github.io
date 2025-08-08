@@ -15,22 +15,16 @@ header:
 </div>
 
 <div class="project-list">
-  <!-- Example card with image -->
+  <!-- Example card -->
   <a href="/projects/plan-1" class="project-card social neuro">
     <img src="/assets/img/projects/SRE2_method1.png" alt="Neural mechanisms" class="project-img">
     <div class="project-info">
       <h3 class="project-title">(Plan 1) Neural Mechanisms of Simulating Others’ Thoughts</h3>
-      <p class="project-text">How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective...</p>
+      <p class="project-text">How does the brain represent another person’s thoughts? Participants judged themselves and the president from both their own and a close friend’s perspective. Whole-brain searchlight RSA was used to identify brain regions whose activity patterns capture a friend’s mental perspective. ROI-based MVPA then evaluated cross-condition generalization, testing whether classifiers trained on self-related judgments could decode president-related judgments.</p>
     </div>
   </a>
 
-  <!-- Example card without image -->
-  <a href="/projects/meaningfulness-vwm-boundaries" class="project-card memory no-image">
-    <div class="project-info">
-      <h3 class="project-title">Meaningfulness &amp; Visual Working Memory Across Spatial Boundaries</h3>
-      <p class="project-text">Do meaningful objects facilitate encoding of spatially distal features in VWM? We probe cross-boundary integration with meaningful vs. meaningless items...</p>
-    </div>
-  </a>
+  <!-- Other cards go here, same structure -->
 </div>
 
 <script>
@@ -46,25 +40,26 @@ filterSelection('all', document.querySelector('.filter-button'));
 </script>
 
 <style>
-.filter-button{padding:.5rem 1rem;margin:0 .3rem;background:#f0f0f0;border:none;border-radius:6px;cursor:pointer;font-weight:500;transition:background .2s}
-.filter-button:hover{background:#e0e0e0}.filter-button.active{background:#007acc;color:#fff}
+.filter-button { padding: .5rem 1rem; margin: 0 .3rem; background: #f0f0f0; border: none; border-radius: 6px; cursor: pointer; font-weight: 500; transition: background .2s; }
+.filter-button:hover { background: #e0e0e0; }
+.filter-button.active { background: #007acc; color: #fff; }
 
-.project-list{max-width:2000px;margin:0 auto;padding:0 6rem;display:flex;flex-direction:column;gap:1.2rem}
+.project-list { max-width: 100%; margin: 0 auto; padding: 0 10rem; display: flex; flex-direction: column; gap: 2rem; }
 
-.project-card{display:flex;align-items:center;gap:1.5rem;text-decoration:none;color:inherit;background:#fff;border:1px solid #eee;border-radius:12px;padding:1.2rem;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:box-shadow .25s,transform .15s}
-.project-card:hover{box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-1px)}
+.project-card { display: flex; align-items: center; gap: 3rem; text-decoration: none; color: inherit; background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,.05); transition: box-shadow .25s, transform .15s; }
+.project-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.08); transform: translateY(-1px); }
 
-.project-img{width:420px;height:250px;object-fit:cover;border-radius:10px;flex-shrink:0}
-.no-image{padding-left:1.5rem}
+.project-img { width: 600px; height: 340px; object-fit: cover; border-radius: 12px; flex-shrink: 0; }
+.no-image { padding-left: 1.5rem; }
 
-.project-info{flex:1}
-.project-title{font-size:1.65rem;font-weight:800;margin:0 0 .4rem;line-height:1.25}
-.project-text{font-size:1.08rem;color:#444;line-height:1.6;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.project-info { flex: 1; }
+.project-title { font-size: 2rem; font-weight: 800; margin: 0 0 .8rem; line-height: 1.25; }
+.project-text { font-size: 1.15rem; color: #444; line-height: 1.8; margin: 0; }
 
-@media (max-width:900px){
-  .project-list{padding:0 1rem}
-  .project-card{flex-direction:column;align-items:flex-start}
-  .project-img{width:100%;height:auto}
-  .project-title{font-size:1.3rem}
+@media (max-width: 900px) {
+  .project-list { padding: 0 1rem; }
+  .project-card { flex-direction: column; align-items: flex-start; }
+  .project-img { width: 100%; height: auto; }
+  .project-title { font-size: 1.4rem; }
 }
 </style>
