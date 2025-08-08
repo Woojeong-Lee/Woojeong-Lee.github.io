@@ -161,18 +161,29 @@ filterSelection('all', document.querySelector('.filter-button'));
 }
 
 /* 이미지가 없는 항목: 플레이스홀더 패널 유지(정렬 통일) */
+/* 이미지 없는 항목: "Coming Soon" 한 번만 중앙에 표시 */
 .project-row.no-image .project-image {
-  min-height: 320px;
-  background: linear-gradient(180deg, #f6f8fb 0%, #eef2f8 100%);
-  border: 1px dashed #d7deea;
+  position: relative;              /* ::before를 절대배치로 중앙 정렬하기 위함 */
+  min-height: 240px;               /* 필요시 높이 조절 (320px → 240px로 예시) */
+  border: 1px dashed #d7deea;      /* 원하면 지워도 됨 */
+  background: #f8fafc;             /* 원하면 지워도 됨 */
+  display: block;                  /* flex 참여 이슈 방지 */
 }
 .project-row.no-image .project-image::before {
   content: "Coming Soon";
-  font-size: 1.2rem;
-  color: #777;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.05rem;              /* 크기 조절 */
+  color: #9aa3af;                  /* 은은한 회색 */
   font-weight: 500;
   font-style: italic;
+  white-space: nowrap;             /* 세로로 꺾이는 현상 방지 */
+  pointer-events: none;            /* 마우스 이벤트 방해 X */
+  user-select: none;               /* 드래그 방지 (선택적) */
 }
+
 
 /* 텍스트 */
 .project-text {
@@ -197,12 +208,6 @@ filterSelection('all', document.querySelector('.filter-button'));
 .project-link:hover { text-decoration: underline; }
 
 /* ========= Hover/Focus 인터랙션 (커서+그림자만) ========= */
-/* 이미지 호버 */
-.project-image:hover {
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
-}
 /* 제목 호버 */
 .project-text h2:hover {
   cursor: pointer;
