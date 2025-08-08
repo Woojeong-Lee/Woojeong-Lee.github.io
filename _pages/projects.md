@@ -102,8 +102,10 @@ filterSelection('all', document.querySelector('.filter-button'));
 
 <style>
 /* ========= Filters (Underline Tabs) ========= */
-/.project-filters {
-  text-align: center;
+.project-filters {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  gap: 0.3rem;             /* 버튼 간 간격 */
   margin-bottom: 1.25rem;
 }
 
