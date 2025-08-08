@@ -67,6 +67,8 @@ header:
     <section class="project-row memory no-image"
       data-href="/projects/meningfulness" role="link" tabindex="0">
       <div class="project-image" aria-hidden="true"></div>
+        <img src="/assets/img/projects/Meanigfulness_method.png" alt="Meaningfulness Effects">
+      </div>
       <div class="project-text">
         <h2>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h2>
         <p>
