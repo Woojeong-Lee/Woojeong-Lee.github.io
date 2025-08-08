@@ -61,6 +61,13 @@ header:
 
   <details class="project-item social memory">
     <summary>Self-Prioritization Effects on Nonspatial Working Memory</summary>
+    <figure class="project-figure">
+      <img
+        src="/assets/img/projects/SPE_method.png"
+        loading="lazy"
+        style="max-width:100%; border-radius:6px;"
+      >
+    </figure>
     <p>
       Self-prioritization effect (SPE) refers to the tendency to process self-associated items more quickly and accurately. Although extensive studies have demonstrated the SPE on perception, findings regarding its effects on working memory (WM) remain inconsistent. Some studies reported improved WM speed and accuracy for self-associated items (Yin et al, 2019; Yin et al, 2019; Yin &amp; Chen, 2024), while others failed to find such an effect (Constable et al., 2019).
       <br>The current study examined the SPE on shape-based WM across two experiments. Participants associated themselves and others with specific colors and completed a delayed matched-to-sample task
