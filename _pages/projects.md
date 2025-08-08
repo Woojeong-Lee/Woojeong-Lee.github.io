@@ -38,7 +38,7 @@ header:
     <div class="project-text">
       <h2>Contextual Effects on Ensemble Emotion Perception</h2>
       <p>
-        People can rapidly judge the average emotion of multiple faces—an ability known as ensemble perception. However, in real-life situations, context also plays a critical role in interpreting the mood of a crowd. For instance, the same group of excited individuals might be perceived differently depending on whether they are at a protest or a concert. To examine whether such judgments vary with situational context, this study used naturalistic stimuli that combined human figures from real-life images with positive, neutral, or negative backgrounds. Facial emotional valence was quantified using DeepFace, and participants rated the average emotion on a −100 to +100 scale. Results from two experiments showed that both facial and background valence significantly influenced ratings, indicating that context can meaningfully modulate ensemble emotion perception.
+        People can rapidly judge the average emotion of multiple faces—an ability known as ensemble perception. However, in real-life situations, context also plays a critical role in interpreting the mood of a crowd. For instance, the same group of excited individuals might be perceived differently depending on whether they are at a protest or a concert. To examine this hypothesis, this study used naturalistic stimuli that combined human figures from real-life images with positive, neutral, or negative backgrounds. Facial emotional valence was quantified using DeepFace, and participants rated the average emotion on a −100 to +100 scale. Results from two experiments showed that both facial and background valence significantly influenced ratings, indicating that context can meaningfully modulate ensemble emotion perception.
       </p>
     </div>
   </section>
@@ -51,7 +51,7 @@ header:
     <div class="project-text">
       <h2>Self-Prioritization Effects on Nonspatial Working Memory</h2>
       <p>
-        The self-prioritization effect (SPE) refers to faster and more accurate processing of self-associated information, but its impact on working memory (WM) is unclear. We examined SPE in nonspatial WM across two experiments(<a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>, <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>) using shape–color associations. While shape memory showed no self-advantage, responses to self-associated colors were consistently faster, suggesting that in nonspatial WM, SPE may be limited to self-associated features rather than whole objects.
+        The self-prioritization effect (SPE) refers to faster and more accurate processing of self-associated information, but its impact on working memory (WM) is unclear. This study examined SPE in nonspatial WM across two experiments(<a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>, <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>) using shape–color associations. While shape memory showed no self-advantage, responses to self-associated colors were consistently faster, suggesting that in nonspatial WM, SPE may be limited to self-associated features rather than whole objects.
         <a href="/data/analyzeSPE8VCS1.html" target="_blank" class="project-link">(Experiment 1)</a>,
         <a href="/data/analyzeSPE8VCS2.html" target="_blank" class="project-link">(Experiment 2)</a>.
       </p>
@@ -66,7 +66,7 @@ header:
     <div class="project-text">
       <h2>The Impact of Meaningfulness on Visual Working Memory Across Spatial Boundaries</h2>
       <p>
-        The study examined whether meaningful objects facilitate encoding of spatially distal features in visual working memory.
+        This study examined whether meaningful objects facilitate encoding of spatially distal features in visual working memory.
       </p>
     </div>
   </section>
@@ -77,7 +77,7 @@ header:
     <div class="project-text">
       <h2>The Influence of Speaker Gender and Age on Product Preference</h2>
       <p>
-        How do speaker gender and age shape product evaluations and purchase decisions? The study explored this using naturalistic video stimuli and fNIRS.
+        How do speaker gender and age shape product evaluations and purchase decisions? This study explored this using naturalistic video stimuli and fNIRS.
       </p>
     </div>
   </section>
