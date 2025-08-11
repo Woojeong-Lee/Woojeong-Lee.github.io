@@ -73,7 +73,7 @@ header:
   <section class="project-row neuro no-image">
     <div class="project-image" aria-hidden="true"></div>
     <div class="project-text">
-      <h2>The Influence of Speaker Gender and Age on Product Preference</h2>
+      <h2>The Influence of Speaker Gender on Product Preference</h2>
       <p>
         Using naturalistic video stimuli and fNIRS, this study examined the influence of speaker gender and age on product evaluations and purchase decisions.
       </p>
