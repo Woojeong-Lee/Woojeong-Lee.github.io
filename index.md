@@ -11,5 +11,5 @@ permalink: /
 
 <p>
   My research interests are in understanding how internal states shape human cognitive processes, 
-  and interactions with the external environment, and how these processes are represented in the brain.
+  and how these processes are represented in the brain.
 </p>
